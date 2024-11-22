@@ -1,0 +1,273 @@
+Date: 22/11/2024 12:17:12
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com = ?' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT * FROM users WHERE johnpauldanmachi@gmail.com = ?</div>
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\scheme\database\Database.php
+Line Number: 1122
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:20:34
+Exception Class: Error
+Error Message: Call to undefined method Lauth::get_username()
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\helpers\common_helper.php
+Line Number: 64
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:21:47
+Exception Class: Error
+Error Message: Call to undefined function get_fullname()
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\templates\nav.php
+Line Number: 26
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:21:48
+Exception Class: Error
+Error Message: Call to undefined function get_fullname()
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\templates\nav.php
+Line Number: 26
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:21:48
+Exception Class: Error
+Error Message: Call to undefined function get_fullname()
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\templates\nav.php
+Line Number: 26
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:22:39
+Exception Class: Error
+Error Message: Call to undefined function get_fullname()
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\templates\nav.php
+Line Number: 26
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:22:39
+Exception Class: Error
+Error Message: Call to undefined function get_fullname()
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\templates\nav.php
+Line Number: 26
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:22:39
+Exception Class: Error
+Error Message: Call to undefined function get_fullname()
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\templates\nav.php
+Line Number: 26
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:23:47
+Exception Class: 2
+Error Message: Undefined array key "fisrtname"
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\libraries\Lauth.php
+Line Number: 200
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:23:48
+Exception Class: 2
+Error Message: Undefined array key "fisrtname"
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\libraries\Lauth.php
+Line Number: 200
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:23:48
+Exception Class: 2
+Error Message: Undefined array key "fisrtname"
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\libraries\Lauth.php
+Line Number: 200
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:24:00
+Exception Class: 2
+Error Message: Undefined array key "fisrtname"
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\libraries\Lauth.php
+Line Number: 200
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:24:01
+Exception Class: 2
+Error Message: Undefined array key "fisrtname"
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\libraries\Lauth.php
+Line Number: 200
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:24:01
+Exception Class: 2
+Error Message: Undefined array key "fisrtname"
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\libraries\Lauth.php
+Line Number: 200
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:24:07
+Exception Class: 2
+Error Message: Undefined array key "lastname"
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\libraries\Lauth.php
+Line Number: 200
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:24:08
+Exception Class: 2
+Error Message: Undefined array key "lastname"
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\libraries\Lauth.php
+Line Number: 200
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:24:08
+Exception Class: 2
+Error Message: Undefined array key "lastname"
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\libraries\Lauth.php
+Line Number: 200
+------------------------------------------------------------------
+
+Date: 22/11/2024 12:27:53
+Exception Class: Error
+Error Message: Class "PHPMailer\PHPMailer\PHPMailer" not found
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\controllers\Auth.php
+Line Number: 195
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:09:18
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 49
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:09:19
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 49
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:09:19
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 49
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:09:28
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 49
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:09:34
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 49
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:09:45
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 49
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:09:46
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 49
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:09:46
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 49
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:36:43
+Exception Class: PDOException
+Error Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email' in 'where clause'<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT * FROM users WHERE email = ?</div>
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\scheme\database\Database.php
+Line Number: 1122
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:37:21
+Exception Class: PDOException
+Error Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email' in 'where clause'<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT * FROM users WHERE email = ?</div>
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\scheme\database\Database.php
+Line Number: 1122
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:39:33
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 55
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:40:27
+Exception Class: 2
+Error Message: Undefined variable $tag
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 57
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:42:04
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 55
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:43:53
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 55
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:43:58
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 55
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:44:13
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 55
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:44:43
+Exception Class: 2
+Error Message: Undefined variable $tag
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 57
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:44:43
+Exception Class: 2
+Error Message: Undefined variable $tag
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 57
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:44:44
+Exception Class: 2
+Error Message: Undefined variable $tag
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 57
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:44:54
+Exception Class: ParseError
+Error Message: syntax error, unexpected token ";"
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 57
+------------------------------------------------------------------
+
+Date: 22/11/2024 13:44:54
+Exception Class: ParseError
+Error Message: syntax error, unexpected token ";"
+Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
+Line Number: 57
+------------------------------------------------------------------
+
