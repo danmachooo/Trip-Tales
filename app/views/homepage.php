@@ -3,10 +3,10 @@ include APP_DIR.'views/templates/header.php';
 ?>
 <body>
     <div id="app">
-    <?php
-    include APP_DIR.'views/templates/nav.php';
-    ?>  
-    <div class="container mx-auto px-4 mt-20">
+        <?php
+        include APP_DIR.'views/templates/nav.php';
+        ?>  
+        <div class="container mx-auto px-4 mt-20">
             <div class="flex justify-center">
                 <!-- Main Feed -->
                 <div class="md:w-2/3 space-y-6">
@@ -21,108 +21,159 @@ include APP_DIR.'views/templates/header.php';
                     </div>
                     
                     <!-- Modal -->
-                    <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center transition-opacity duration-300 ease-in-out">
-                        <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
-                        
-                        <div class="modal-container bg-white w-11/12 md:max-w-3xl mx-auto rounded-lg shadow-2xl z-50 overflow-y-auto p-6">
-                            <div class="modal-content">
+                    <div id="post-modal" class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center transition-opacity duration-300 ease-in-out">
+                        <div class="modal-overlay absolute w-full h-full bg-black opacity-50 z-40"></div>
+                        <div class="modal-container bg-white w-11/12 md:max-w-3xl mx-auto rounded-lg shadow-xl z-50 overflow-y-auto max-h-[90vh] p-8 transition-all transform scale-95 opacity-0 modal-appear">
+                        <form id="entry-form" enctype="multipart/form-data">
+                            <div class="modal-content border-0">
                                 <!-- Header Section -->
-                                <div class="flex justify-between items-center pb-4 border-b border-gray-300">
-                                    <p class="text-2xl font-semibold text-gray-800">Create Post</p>
+                                <div class="flex justify-between items-center pb-4 border-b border-0-gray-300 sticky top-0 bg-white z-1">
+                                <p class="text-2xl font-semibold text-gray-800">Create Post</p>
                                     <div class="modal-close cursor-pointer text-gray-600 hover:text-gray-800 transition duration-300">
                                         <svg class="fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
                                             <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
                                         </svg>
                                     </div>
                                 </div>
-                                <form id="entry_form">
-                                    <!-- Post Content Section -->
-                                    <div class="space-y-6">
-                                        <textarea name="description" class="w-full p-4 border border-gray-300 rounded-lg resize-none bg-gray-50 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4" placeholder="What's on your mind?"></textarea>
-                                        
-                                        <!-- Image Upload Section -->
-                                        <div class="space-y-4">
-                                            <label class="block text-sm font-medium text-gray-700">Upload Image</label>
-                                            <div class="flex flex-col items-start space-y-4">
-                                                <label for="image-upload" class="cursor-pointer bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
-                                                    Choose Image
-                                                </label>
+
+                                <!-- Post Content Section -->
+                                <div class="space-y-6 border-0">
+                                    <textarea id="description" name="description" class="w-full p-4 border border-gray-300 rounded-lg resize-none bg-gray-50 text-gray-700 placeholder-gray-400  focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors" rows="4" placeholder="What's on your mind?"></textarea>
+                                    <div class="space-y-2">
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Select Tags</label>
+                                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
+                                            <?php foreach ($tags as $tag): ?>
+                                            <div class="flex items-center">
+                                                <input type="checkbox" id="tag-<?= $tag['id']; ?>" name="tags[]" value="<?= $tag['id']; ?>" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
+                                                <label for="tag-<?= $tag['id']; ?>" class="ml-2 text-sm text-gray-700"><?= $tag['name']; ?></label>
                                             </div>
-
-                                            <div id="image-preview" class="w-full h-64 bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 border-2 border-dashed border-gray-300">
-                                                <span>Image Preview</span>
-                                            </div>
-
-                                            <div id="map-container" class="hidden space-y-4">
-                                                <div id="map" class="w-full h-64 bg-gray-200 rounded-lg"></div>
-                                                <div class="space-y-2">
-                                                    <label class="block text-sm font-medium text-gray-700">Enter Location</label>
-                                                    <div class="flex gap-2">
-                                                        <input id="location-input" name="destination" placeholder="Search for a location" class="flex-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                                                        <button id="location-btn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
-                                                            Share Location
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <input type="file" id="image-upload" class="hidden" accept="image/*">
-                                        </div>
-
-                                        <!-- Action Buttons -->
-                                        <div class="flex justify-between">
-                                            <button id="toggle-map" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-lg transition duration-300">
-                                                Add Location
-                                            </button>
-                                            <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
-                                                Post
-                                            </button>
+                                            <?php endforeach; ?>
                                         </div>
                                     </div>
-                                </form>
+                                    <!-- Image Upload Section -->
+                                    <div class="space-y-4">
+                                        <label class="block text-sm font-medium text-gray-700">Upload Image</label>
+                                        <label for="image-upload" class="cursor-pointer bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                                            Choose Image
+                                        </label>
+                                        <input type="file" size="20" id="image-upload" name="image-upload" class="hidden" accept="image/*">
+
+                                        <div id="image-preview" class="w-full h-64 bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 border-2 border-dashed border-gray-300">
+                                            <span>Image Preview</span>
+                                        </div>
+
+                                        <!-- Map Section -->
+                                        <div id="map-container" class="hidden space-y-4">
+                                            <div id="map" class="w-full h-64 bg-gray-200 rounded-lg"></div>
+                                            <div class="space-y-2">
+                                                <label class="block text-sm font-medium text-gray-700">Enter Location</label>
+                                                <div class="flex gap-2">
+                                                    <input id="location-input" name="destination" placeholder="Search for a location" class="flex-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                                                    <button id="location-btn" type="button" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 transform hover:scale-105">
+                                                        Share Location
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Action Buttons -->
+                                    <div class="flex justify-between">
+                                        <button id="toggle-map" type="button" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-lg transition duration-300 transform hover:scale-105">
+                                            Add Location
+                                        </button>
+                                        <button type="submit" class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-lg transition duration-300 transform hover:scale-105">
+                                            Post
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
+                </div>
 
 
 
                     <!-- Post -->
-                    <div class="bg-white rounded-lg shadow p-6">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
-                            <div>
-                                <h3 class="font-bold">Jane Doe</h3>
-                                <p class="text-sm text-gray-500">2 hours ago</p>
+
+                    <?php foreach ($posts as $post): ?>
+                        <input type="hidden" id="latitude" name="latitude" value="<?=$post['latitude']?>">
+                        <input type="hidden" id="longitude" name="longitude" value="<?=$post['longitude']?>">
+                        <div class="bg-white rounded-lg shadow p-6">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
+                                <div>
+                                    <h3 class="font-bold"><?= $post['firstname'] ?> <?= $post['lastname'] ?> is in <?=$post['destination']?></h3>
+                                    <p class="text-sm text-gray-500"><?=$post['posted_date']?></p>
+                                </div>
                             </div>
-                        </div>
-                        <p class="mb-4">Just arrived in Bali! The beaches here are absolutely stunning. Can't wait to explore more! 🌴🏖️ #BaliAdventure</p>
-                        <div class="bg-gray-100 rounded-lg h-64 flex items-center justify-center">
-                            <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                            </svg>
-                        </div>
-                        <div class="flex items-center justify-between mt-4">
-                            <button class="flex items-center gap-2 text-gray-600 hover:text-blue-600" id="likeButton">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            <p class="mb-4"><?=$post['description']?></p>
+
+                            <!-- Convert tags to hashtags -->
+                            <?php 
+                                // If the tags are not empty
+                                if (!empty($post['tags'])): 
+                                    // Split the tags by commas
+                                    $tags = explode(', ', $post['tags']);
+                                    // Display each tag as a hashtag
+                                    foreach ($tags as $tag): 
+                                        echo '<span class="text-blue-500 font-semibold">#' . htmlspecialchars($tag) . ' </span>';
+                                    endforeach;
+                                endif;
+                            ?>
+
+                            <div class="bg-gray-100 rounded-lg h-64 flex items-center justify-center mb-4">
+                                <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                                 </svg>
-                                <span id="likeCount">0</span> Likes
-                            </button>
-                            <button class="text-gray-600 hover:text-blue-600" id="showComments">
-                                <span id="commentCount">0</span> Comments
-                            </button>
-                        </div>
-                        <div id="commentSection" class="hidden mt-4">
-                            <div class="border-t pt-4 mb-4">
-                                <h4 class="font-bold mb-2">Comments</h4>
-                                <ul id="commentList" class="space-y-2"></ul>
                             </div>
-                            <form id="commentForm" class="flex gap-2">
-                                <input type="text" id="commentInput" placeholder="Add a comment..." class="flex-grow p-2 border rounded-lg">
-                                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Post</button>
-                            </form>
+                            <!-- New Map Area -->
+                            <div class="mb-4">
+                                <h4 class="font-bold mb-2">Location</h4>
+                                <div id="map-<?= $post['entry_id'] ?>" class="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
+                                    <!-- <p class="text-gray-500">Map of Bali will be displayed here</p> -->
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <button class="flex items-center gap-2 text-gray-600 hover:text-blue-600" id="likeButton">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                    <span id="likeCount"><?=$post['like_count']?></span> Likes
+                                </button>
+                                <button class="text-gray-600 hover:text-blue-600" id="showComments">
+                                    <span id="commentCount"><?=$post['comment_count']?></span> Comments
+                                </button>
+                            </div>
+                            <div id="commentSection" class="mt-4">
+                                <div class="border-t pt-4 mb-4">
+                                    <h4 class="font-bold mb-2">Comments</h4>
+                                    <ul id="commentList" class="space-y-2">
+                                        <?php if (!empty($post['comments'])): ?>
+                                            <?php
+                                            // Explode the comments from the SQL result into an array
+                                            $comments = explode('; ', $post['comments']);
+                                            foreach ($comments as $comment): ?>
+                                                <li class="border-b pb-2">
+                                                    <p>"<?php echo htmlspecialchars($comment); ?>"</p>
+                                                </li>
+                                            <?php endforeach; ?>
+                                        <?php else: ?>
+                                            <li>No comments yet.</li>
+                                        <?php endif; ?>
+                                    </ul>
+                                </div>
+                                <form id="commentForm" class="flex gap-2" method="POST" action="post_comment.php">
+                                    <input type="hidden" name="entry_id" value="<?php echo $post['entry_id']; ?>"> <!-- Pass entry ID -->
+                                    <input type="text" name="comment" id="commentInput" placeholder="Add a comment..." class="flex-grow p-2 border rounded-lg" required>
+                                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Post</button>
+                                </form>
+                            </div>
                         </div>
-                    </div>
+                    <?php endforeach; ?>
+
+
+                    
                 </div>
             </div>
         </div>
@@ -131,123 +182,240 @@ include APP_DIR.'views/templates/header.php';
 
 </body>
 </html>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <!-- Leaflet.js CDN -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<!-- Leaflet.js CDN -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-    <script>
-        // Modal functionality
-        var openmodal = document.getElementById('post-creator-trigger')
-        var modal = document.querySelector('.modal')
-        var closemodal = document.querySelector('.modal-close')
-        var overlay = document.querySelector('.modal-overlay')
+<script>
+// Modal Functionality
+const openModal = document.getElementById('post-creator-trigger');
+const modal = document.querySelector('.modal');
+const closeModalBtn = document.querySelector('.modal-close');
+const overlay = document.querySelector('.modal-overlay');
+const form = document.getElementById('entry-form');
+const mapContainer = document.getElementById('map-container');
+const toggleMapButton = document.getElementById('toggle-map');
 
-        openmodal.addEventListener('click', function() {
-            modal.classList.remove('opacity-0')
-            modal.classList.remove('pointer-events-none')
-            document.body.classList.add('modal-active')
-        })
+// Open Modal
+openModal.addEventListener('click', () => {
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    document.body.classList.add('modal-active');
+    setTimeout(() => {
+        modal.querySelector('.modal-container').classList.remove('scale-95', 'opacity-0');
+    }, 100); // Delay to make the scaling effect visible
+});
 
-        closemodal.addEventListener('click', closeModal)
-        overlay.addEventListener('click', closeModal)
+// Close Modal with Confirmation
+const closeModal = () => {
+    const confirmClose = confirm('Are you sure you want to close this form? All entered data will be lost.');
+    if (confirmClose) {
+        form.reset();
+        $('#image-preview').html('<span>Image Preview</span>');
 
-        function closeModal() {
-            modal.classList.add('opacity-0')
-            modal.classList.add('pointer-events-none')
-            document.body.classList.remove('modal-active')
+        if (marker) {
+            map.removeLayer(marker);
+            marker = null;
         }
 
-        // Map functionality
-        var map = null
-        var marker = null
-        var savedLatitude = null
-        var savedLongitude = null
-        var savedLocationName = null
+        if (!mapContainer.classList.contains('hidden')) {
+            mapContainer.classList.add('hidden');
+            toggleMapButton.textContent = 'Add Location';
+        }
 
-        document.getElementById('toggle-map').addEventListener('click', function() {
-            var mapContainer = document.getElementById('map-container')
-            if (mapContainer.classList.contains('hidden')) {
-                mapContainer.classList.remove('hidden')
-                this.textContent = 'Hide Map'
-                initializeMap()
-            } else {
-                mapContainer.classList.add('hidden')
-                this.textContent = 'Add Location'
-            }
-        })
+        modal.querySelector('.modal-container').classList.add('scale-95', 'opacity-0');
+        setTimeout(() => {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            document.body.classList.remove('modal-active');
+        }, 300);
+    }
+};
 
-        function initializeMap() {
-            if (!map) {
-                map = L.map('map').setView([0, 0], 2)
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                }).addTo(map)
+closeModalBtn.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
 
-                document.getElementById('location-btn').addEventListener('click', pinLocation)
-                document.getElementById('location-input').addEventListener('keypress', function(event) {
-                    if (event.key === 'Enter') {
-                        event.preventDefault()
-                        pinLocation()
+// Map Functionality
+let map = null;
+let marker = null;
+
+document.getElementById('toggle-map').addEventListener('click', () => {
+    const mapContainer = document.getElementById('map-container');
+    const toggleBtn = document.getElementById('toggle-map');
+
+    if (mapContainer.classList.contains('hidden')) {
+        mapContainer.classList.remove('hidden');
+        toggleBtn.textContent = 'Hide Map';
+        initializeMap();
+    } else {
+        mapContainer.classList.add('hidden');
+        toggleBtn.textContent = 'Add Location';
+    }
+});
+
+// Initialize the map only once
+const initializeMap = () => {
+    if (!map) {
+        map = L.map('map').setView([0, 0], 2);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+
+        document.getElementById('location-btn').addEventListener('click', pinLocation);
+    }
+};
+
+// Function to handle location pinning
+const pinLocation = () => {
+    const locationInput = document.getElementById('location-input').value;
+
+    if (locationInput.trim()) {
+        fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(locationInput)}`)
+            .then((response) => response.json())
+            .then((data) => {
+                if (data.length > 0) {
+                    const latitude = parseFloat(data[0].lat);
+                    const longitude = parseFloat(data[0].lon);
+                    const locationName = data[0].display_name;
+
+                    if (marker) {
+                        map.removeLayer(marker);
                     }
-                })
-            }
-        }
 
-        function pinLocation() {
-            var locationInput = document.getElementById('location-input').value
+                    marker = L.marker([latitude, longitude]).addTo(map);
+                    map.setView([latitude, longitude], 13);
+                    marker.bindPopup(locationName).openPopup();
 
-            if (locationInput.trim()) {
-                fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(locationInput)}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.length > 0) {
-                            savedLatitude = parseFloat(data[0].lat)
-                            savedLongitude = parseFloat(data[0].lon)
-                            savedLocationName = data[0].display_name
-                            var latLng = [savedLatitude, savedLongitude]
-
-                            if (marker) {
-                                map.removeLayer(marker)
-                            }
-
-                            marker = L.marker(latLng).addTo(map)
-                            map.setView(latLng, 13)
-                            marker.bindPopup(savedLocationName).openPopup()
-
-                            console.log('Saved Location:', savedLocationName)
-                            console.log('Latitude:', savedLatitude)
-                            console.log('Longitude:', savedLongitude)
-                        } else {
-                            alert('Location not found. Please try a different search term.')
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error:', error)
-                        alert('An error occurred while searching for the location. Please try again.')
-                    })
-            } else {
-                alert('Please enter a location.')
-            }
-        }
-
-        // Image preview functionality
-        document.getElementById('image-upload').addEventListener('change', function(event) {
-            const imagePreview = document.getElementById('image-preview')
-            const file = event.target.files[0]
-            if (file) {
-                const reader = new FileReader()
-                reader.onload = function(e) {
-                    imagePreview.innerHTML = `<img src="${e.target.result}" class="w-full h-full object-cover" />`
+                    console.log('Location:', locationName, 'Lat:', latitude, 'Lng:', longitude);
+                } else {
+                    alert('Location not found. Try again.');
                 }
-                reader.readAsDataURL(file)
-            }
-        })
-    </script>
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('Error finding location.');
+            });
+    } else {
+        alert('Please enter a location.');
+    }
+};
 
-    <script>
-        
-    </script>
+// Image Upload Preview
+$('#image-upload').on('change', function (event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            $('#image-preview').html(`<img src="${e.target.result}" class="w-full h-full object-cover rounded-lg">`);
+        };
+        reader.readAsDataURL(file);
+    } else {
+        $('#image-preview').html('<span>Image Preview</span>');
+    }
+});
+
+// Form Submission with AJAX
+$(document).ready(() => {
+    $('#entry-form').on('submit', function (e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        let formData = new FormData(this);
+
+        if (marker) {
+            formData.append('latitude', marker.getLatLng().lat);
+            formData.append('longitude', marker.getLatLng().lng);
+        }
+
+        const fileInput = $('#image-upload')[0];
+        if (fileInput.files[0]) {
+            formData.append('photo_url', fileInput.files[0]);
+        }
+
+        const selectedTags = $('input[name="tags[]"]:checked').map(function () {
+            return this.value;
+        }).get();
+        formData.delete('tags[]');
+        selectedTags.forEach(tag => formData.append('tags[]', tag));
+
+        // Log the FormData to check its contents
+        for (let pair of formData.entries()) {
+            console.log(pair[0] + ': ' + pair[1]);
+        }
+
+        // Send the AJAX request
+        $.ajax({
+            url: '<?= site_url("posts/save-entry"); ?>', // Ensure this URL is correct
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Post saved successfully!',
+                    text: data.message || 'Your post has been successfully saved.',
+                    showConfirmButton: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        form.reset();
+                        $('#image-preview').html('<span>Image Preview</span>');
+
+                        if (marker) {
+                            map.removeLayer(marker);
+                            marker = null;
+                        }
+
+                        if (!mapContainer.classList.contains('hidden')) {
+                            mapContainer.classList.add('hidden');
+                            toggleMapButton.textContent = 'Add Location';
+                        }
+
+                        modal.querySelector('.modal-container').classList.add('scale-95', 'opacity-0');
+                        setTimeout(() => {
+                            modal.classList.add('opacity-0', 'pointer-events-none');
+                            document.body.classList.remove('modal-active');
+                        }, 300);
+
+                        location.reload(); // Refresh the page to reflect changes
+                    }
+                });
+            },
+            error: function (xhr, status, error) {
+                console.error('AJAX Error:', xhr.responseText);
+                try {
+                    var response = JSON.parse(xhr.responseText);
+                    alert(response.message || 'An error occurred while processing your request.');
+                } catch (e) {
+                    alert('An unexpected error occurred. Please try again.');
+                }
+            }
+        });
+    });
+
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const posts = <?php echo json_encode($posts); ?>; // Pass PHP data to JavaScript
+
+    posts.forEach(post => {
+        const mapId = `map-${post.entry_id}`; // Use the unique ID for each post's map container
+        const mapElement = document.getElementById(mapId);
+
+        if (mapElement && post.latitude && post.longitude) {
+            const map = L.map(mapId).setView([post.latitude, post.longitude], 13);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            L.marker([post.latitude, post.longitude])
+                .addTo(map)
+                .bindPopup(post.destination)
+                .openPopup();
+        }
+    });
+});
+
+</script>

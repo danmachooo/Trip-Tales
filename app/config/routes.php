@@ -52,3 +52,8 @@ $router->group('/auth', function() use ($router){
     $router->match('/password-reset', 'Auth::password_reset', ['POST', 'GET']);
     $router->match('/set-new-password', 'Auth::set_new_password', ['POST', 'GET']);
 });
+
+$router->group('/posts', function() use ($router) {
+    $router->match('/save-entry', 'Entry_controller::save_entry', ['POST', 'GET']);
+    $router->get('/fetch-entry', 'Entry_controller::get_all_entries');
+});

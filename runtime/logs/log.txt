@@ -271,3 +271,843 @@ Filename: C:\Users\PC07\Desktop\Trip TAles\LavaLust-UI\app\views\homepage.php
 Line Number: 57
 ------------------------------------------------------------------
 
+Date: 23/11/2024 9:59:42
+Exception Class: TypeError
+Error Message: strtolower(): Argument #1 ($string) must be of type string, array given
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 49
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:00:02
+Exception Class: TypeError
+Error Message: strtolower(): Argument #1 ($string) must be of type string, array given
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 49
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:00:03
+Exception Class: TypeError
+Error Message: strtolower(): Argument #1 ($string) must be of type string, array given
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 49
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:02:40
+Exception Class: TypeError
+Error Message: strtolower(): Argument #1 ($string) must be of type string, array given
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 49
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:04:59
+Exception Class: TypeError
+Error Message: strtolower(): Argument #1 ($string) must be of type string, array given
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\test.php
+Line Number: 4
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:05:15
+Exception Class: TypeError
+Error Message: strtolower(): Argument #1 ($string) must be of type string, array given
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\test.php
+Line Number: 4
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:05:16
+Exception Class: TypeError
+Error Message: strtolower(): Argument #1 ($string) must be of type string, array given
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\test.php
+Line Number: 4
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:05:16
+Exception Class: TypeError
+Error Message: strtolower(): Argument #1 ($string) must be of type string, array given
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\test.php
+Line Number: 4
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:05:33
+Exception Class: 2
+Error Message: Array to string conversion
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\test.php
+Line Number: 4
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:05:34
+Exception Class: 2
+Error Message: Array to string conversion
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\test.php
+Line Number: 4
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:05:34
+Exception Class: 2
+Error Message: Array to string conversion
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\test.php
+Line Number: 4
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:05:34
+Exception Class: 2
+Error Message: Array to string conversion
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\test.php
+Line Number: 4
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:06:57
+Exception Class: 2
+Error Message: Array to string conversion
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\test.php
+Line Number: 4
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:06:57
+Exception Class: 2
+Error Message: Array to string conversion
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\test.php
+Line Number: 4
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:06:58
+Exception Class: 2
+Error Message: Array to string conversion
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\test.php
+Line Number: 4
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:06:58
+Exception Class: 2
+Error Message: Array to string conversion
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\test.php
+Line Number: 4
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:43:27
+Exception Class: RuntimeException
+Error Message: Method Entry_controller::index is inaccessible or nonexistent.
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\kernel\Router.php
+Line Number: 220
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:44:57
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 45
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:48:27
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 45
+------------------------------------------------------------------
+
+Date: 23/11/2024 10:50:40
+Exception Class: ParseError
+Error Message: Unclosed '(' on line 28 does not match '}'
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 29
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:18:18
+Exception Class: Error
+Error Message: Call to undefined method Database::rollBack()
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 51
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:18:21
+Exception Class: Error
+Error Message: Call to undefined method Database::rollBack()
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 51
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:18:29
+Exception Class: Error
+Error Message: Call to undefined method Database::rollBack()
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 51
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:23:58
+Exception Class: Error
+Error Message: Call to undefined method Database::rollBack()
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 51
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:25:26
+Exception Class: Error
+Error Message: Call to undefined method Database::rollBack()
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 51
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:29:44
+Exception Class: 2
+Error Message: Undefined array key "latitude"
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\kernel\Io.php
+Line Number: 125
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:36:43
+Exception Class: Error
+Error Message: Call to undefined method Database::insert_id()
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 31
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:38:43
+Exception Class: Error
+Error Message: Call to undefined method Form_validation::set_rules()
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\controllers\Entry_controller.php
+Line Number: 23
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:41:44
+Exception Class: Error
+Error Message: Call to undefined method Form_validation::set_rules()
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\controllers\Entry_controller.php
+Line Number: 23
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:41:57
+Exception Class: Error
+Error Message: Call to undefined method Form_validation::set_rules()
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\controllers\Entry_controller.php
+Line Number: 23
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:43:19
+Exception Class: Error
+Error Message: Call to undefined method Form_validation::set_rules()
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\controllers\Entry_controller.php
+Line Number: 23
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:48:07
+Exception Class: Error
+Error Message: Call to undefined function json_response()
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\controllers\Entry_controller.php
+Line Number: 48
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:49:18
+Exception Class: Error
+Error Message: Call to undefined function json_response()
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\controllers\Entry_controller.php
+Line Number: 48
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:54:34
+Exception Class: Error
+Error Message: Call to undefined function json_response()
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\controllers\Entry_controller.php
+Line Number: 48
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:57:30
+Exception Class: Error
+Error Message: Call to undefined function json_response()
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\controllers\Entry_controller.php
+Line Number: 48
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:58:51
+Exception Class: 2
+Error Message: Undefined array key "latitude"
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\kernel\Io.php
+Line Number: 125
+------------------------------------------------------------------
+
+Date: 23/11/2024 11:59:55
+Exception Class: Error
+Error Message: Call to undefined function json_response()
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\controllers\Entry_controller.php
+Line Number: 48
+------------------------------------------------------------------
+
+Date: 23/11/2024 12:09:13
+Exception Class: 2
+Error Message: Undefined variable $posts
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 99
+------------------------------------------------------------------
+
+Date: 23/11/2024 12:50:24
+Exception Class: 2
+Error Message: Undefined variable $posts
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 99
+------------------------------------------------------------------
+
+Date: 23/11/2024 12:50:31
+Exception Class: 2
+Error Message: Undefined variable $posts
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 99
+------------------------------------------------------------------
+
+Date: 23/11/2024 12:50:33
+Exception Class: 2
+Error Message: Undefined variable $posts
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 99
+------------------------------------------------------------------
+
+Date: 23/11/2024 12:51:46
+Exception Class: 2
+Error Message: Undefined variable $posts
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 99
+------------------------------------------------------------------
+
+Date: 23/11/2024 12:51:46
+Exception Class: 2
+Error Message: Undefined variable $posts
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 99
+------------------------------------------------------------------
+
+Date: 23/11/2024 12:57:06
+Exception Class: 2
+Error Message: Undefined variable $posts
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 99
+------------------------------------------------------------------
+
+Date: 23/11/2024 12:57:07
+Exception Class: 2
+Error Message: Undefined variable $posts
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 99
+------------------------------------------------------------------
+
+Date: 23/11/2024 12:57:07
+Exception Class: 2
+Error Message: Undefined variable $posts
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 99
+------------------------------------------------------------------
+
+Date: 23/11/2024 12:57:07
+Exception Class: 2
+Error Message: Undefined variable $posts
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 99
+------------------------------------------------------------------
+
+Date: 23/11/2024 12:58:08
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 12:59:45
+Exception Class: ParseError
+Error Message: syntax error, unexpected token ";", expecting "function" or "const"
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\controllers\Home.php
+Line Number: 21
+------------------------------------------------------------------
+
+Date: 23/11/2024 12:59:46
+Exception Class: ParseError
+Error Message: syntax error, unexpected token ";", expecting "function" or "const"
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\controllers\Home.php
+Line Number: 21
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:00:02
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:00:39
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:00:39
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:00:39
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:01:20
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:01:20
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:01:20
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:01:21
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:01:21
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:01:21
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:04:51
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:04:52
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:04:52
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:05:07
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:05:07
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:05:07
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:05:07
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:05:07
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:05:08
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:05:30
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:05:30
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:05:30
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:05:30
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:05:31
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:05:31
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:05:45
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:07:22
+Exception Class: ParseError
+Error Message: syntax error, unexpected token ","
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 94
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:07:23
+Exception Class: ParseError
+Error Message: syntax error, unexpected token ","
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 94
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:07:23
+Exception Class: ParseError
+Error Message: syntax error, unexpected token ","
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 94
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:07:23
+Exception Class: ParseError
+Error Message: syntax error, unexpected token ","
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 94
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:07:36
+Exception Class: ParseError
+Error Message: syntax error, unexpected token ","
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 94
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:07:36
+Exception Class: ParseError
+Error Message: syntax error, unexpected token ","
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 94
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:07:36
+Exception Class: ParseError
+Error Message: syntax error, unexpected token ","
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 94
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:07:57
+Exception Class: ParseError
+Error Message: syntax error, unexpected token ","
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 94
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:07:57
+Exception Class: ParseError
+Error Message: syntax error, unexpected token ","
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 94
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:07:57
+Exception Class: ParseError
+Error Message: syntax error, unexpected token ","
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\models\Entry_model.php
+Line Number: 94
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:08:18
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:08:19
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:08:19
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:10:46
+Exception Class: 8192
+Error Message: PDO::prepare(): Passing null to parameter #1 ($query) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 254
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:10:46
+Exception Class: 8192
+Error Message: PDO::prepare(): Passing null to parameter #1 ($query) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 254
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:10:47
+Exception Class: 8192
+Error Message: PDO::prepare(): Passing null to parameter #1 ($query) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 254
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:10:47
+Exception Class: 8192
+Error Message: PDO::prepare(): Passing null to parameter #1 ($query) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 254
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:10:47
+Exception Class: 8192
+Error Message: PDO::prepare(): Passing null to parameter #1 ($query) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 254
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:10:47
+Exception Class: 8192
+Error Message: PDO::prepare(): Passing null to parameter #1 ($query) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 254
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:10:47
+Exception Class: 8192
+Error Message: PDO::prepare(): Passing null to parameter #1 ($query) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 254
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:11:03
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:11:03
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:11:03
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:11:06
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:11:07
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:11:09
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:11:10
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:11:15
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:12:07
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:12:07
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:12:07
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:14:08
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:16:31
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:17:44
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:17:44
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:17:44
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:17:45
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:23:52
+Exception Class: TypeError
+Error Message: explode(): Argument #2 ($string) must be of type string, array given
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 394
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:23:52
+Exception Class: TypeError
+Error Message: explode(): Argument #2 ($string) must be of type string, array given
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 394
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:23:52
+Exception Class: TypeError
+Error Message: explode(): Argument #2 ($string) must be of type string, array given
+Filename: C:\Users\PC07\Desktop\Trip Tales\scheme\database\Database.php
+Line Number: 394
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:27:04
+Exception Class: 2
+Error Message: Undefined array key "u.firstname"
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 104
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:27:21
+Exception Class: 2
+Error Message: Undefined array key "u.lastname"
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 104
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:27:26
+Exception Class: 2
+Error Message: Undefined array key "te.destination"
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 104
+------------------------------------------------------------------
+
+Date: 23/11/2024 13:27:31
+Exception Class: 2
+Error Message: Undefined array key "te.description"
+Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
+Line Number: 108
+------------------------------------------------------------------
+

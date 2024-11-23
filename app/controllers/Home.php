@@ -5,14 +5,17 @@ class Home extends Controller {
 
     public function __construct() {
         parent::__construct();
-        
+        $this->call->model('Entry_model', 'entry');
         if(! logged_in()) {
             redirect('auth');
         }
+
+
     }
 
 	public function index() {
-        $this->call->view('homepage');
+        $data['tags'] = $this->entry->get_all_tags();
+        $data['posts'] = $this->entry->get_all_entries();
+        $this->call->view('homepage', $data);
     }
 }
-?>
