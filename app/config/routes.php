@@ -55,5 +55,4 @@ $router->group('/auth', function() use ($router){
 
 $router->group('/posts', function() use ($router) {
     $router->match('/save-entry', 'Entry_controller::save_entry', ['POST', 'GET']);
-    $router->get('/fetch-entry', 'Entry_controller::get_all_entries');
 });
