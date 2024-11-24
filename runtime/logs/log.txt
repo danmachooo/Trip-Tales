@@ -1111,3 +1111,401 @@ Filename: C:\Users\PC07\Desktop\Trip Tales\app\views\homepage.php
 Line Number: 108
 ------------------------------------------------------------------
 
+Date: 24/11/2024 11:10:10
+Exception Class: PDOException
+Error Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'firstname' in 'field list'<div style="background-color:#000;color:#fff;padding:15px">Query: INSERT INTO users (firstname, lastname, birthday, password, email, email_token) VALUES (?, ?, ?, ?, ?, ?)</div>
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 273
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:12:48
+Exception Class: PDOException
+Error Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'te.photo_url' in 'field list'<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT te.id AS entry_id, te.destination, te.description, te.photo_url, te.latitude, te.longitude, te.created_at AS posted_date, u.firstname, u.lastname, GROUP_CONCAT(DISTINCT t.name ORDER BY t.name ASC SEPARATOR ", ") AS tags, COUNT(DISTINCT l.id) AS like_count, COUNT(DISTINCT c.id) AS comment_count, GROUP_CONCAT(
+                DISTINCT CONCAT(c.comment, " (", uc.firstname, " ", uc.lastname, ", ", DATE_FORMAT(c.created_at, "%Y-%m-%d %H:%i:%s"), ")")
+                ORDER BY c.created_at ASC SEPARATOR "; "
+            ) AS comments FROM travel_entries AS te JOIN users AS u ON te.user_id = u.id LEFT JOIN entry_tags AS et ON te.id = et.entry_id LEFT JOIN tags AS t ON et.tag_id = t.id LEFT JOIN likes AS l ON te.id = l.entry_id LEFT JOIN comments AS c ON te.id = c.entry_id LEFT JOIN users AS uc ON c.user_id = uc.id GROUP BY te.id, te.destination, te.description, te.photo_url, te.created_at, u.firstname, u.lastname ORDER BY te.created_at DESC</div>
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:21:57
+Exception Class: Error
+Error Message: Class "LChat" not found
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Routine.php
+Line Number: 75
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:21:58
+Exception Class: Error
+Error Message: Class "LChat" not found
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Routine.php
+Line Number: 75
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:21:58
+Exception Class: Error
+Error Message: Class "LChat" not found
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Routine.php
+Line Number: 75
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:22:11
+Exception Class: Error
+Error Message: Class "LChat" not found
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Routine.php
+Line Number: 75
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:22:11
+Exception Class: Error
+Error Message: Class "LChat" not found
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Routine.php
+Line Number: 75
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:22:12
+Exception Class: Error
+Error Message: Class "LChat" not found
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Routine.php
+Line Number: 75
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:22:12
+Exception Class: Error
+Error Message: Class "LChat" not found
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Routine.php
+Line Number: 75
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:22:12
+Exception Class: Error
+Error Message: Class "LChat" not found
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Routine.php
+Line Number: 75
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:22:12
+Exception Class: Error
+Error Message: Class "LChat" not found
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Routine.php
+Line Number: 75
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:23:15
+Exception Class: Error
+Error Message: Class "LChat" not found
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Routine.php
+Line Number: 75
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:23:15
+Exception Class: Error
+Error Message: Class "LChat" not found
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Routine.php
+Line Number: 75
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:23:16
+Exception Class: Error
+Error Message: Class "LChat" not found
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Routine.php
+Line Number: 75
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:43:54
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:43:54
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:43:54
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:43:59
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:44:05
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:44:05
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:44:05
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:45:14
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:45:14
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:45:14
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:45:15
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:45:33
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:45:33
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:45:34
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:45:37
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:45:41
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:45:52
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:45:55
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:46:01
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:46:33
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:47:11
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:47:11
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:47:11
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:47:13
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:47:15
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:47:16
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:47:17
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:47:18
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:47:18
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:47:19
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 11:47:20
+Exception Class: Exception
+Error Message: Property session does not exist
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 24/11/2024 12:41:16
+Exception Class: PDOException
+Error Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'te.photo_url' in 'field list'<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT te.id AS entry_id, te.destination, te.description, te.photo_url, te.latitude, te.longitude, te.created_at AS posted_date, u.firstname, u.lastname, GROUP_CONCAT(DISTINCT t.name ORDER BY t.name ASC SEPARATOR ", ") AS tags, COUNT(DISTINCT l.id) AS like_count, COUNT(DISTINCT c.id) AS comment_count, GROUP_CONCAT(
+                DISTINCT CONCAT(c.comment, " (", uc.firstname, " ", uc.lastname, ", ", DATE_FORMAT(c.created_at, "%Y-%m-%d %H:%i:%s"), ")")
+                ORDER BY c.created_at ASC SEPARATOR "; "
+            ) AS comments FROM travel_entries AS te JOIN users AS u ON te.user_id = u.id LEFT JOIN entry_tags AS et ON te.id = et.entry_id LEFT JOIN tags AS t ON et.tag_id = t.id LEFT JOIN likes AS l ON te.id = l.entry_id LEFT JOIN comments AS c ON te.id = c.entry_id LEFT JOIN users AS uc ON c.user_id = uc.id GROUP BY te.id, te.destination, te.description, te.photo_url, te.created_at, u.firstname, u.lastname ORDER BY te.created_at DESC</div>
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 24/11/2024 12:43:21
+Exception Class: 2
+Error Message: Undefined array key "latitude"
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 125
+------------------------------------------------------------------
+
+Date: 24/11/2024 12:45:16
+Exception Class: Error
+Error Message: Call to undefined function json_response()
+Filename: C:\Users\UGH\Desktop\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 54
+------------------------------------------------------------------
+
+Date: 24/11/2024 12:46:01
+Exception Class: Error
+Error Message: Call to undefined function json_response()
+Filename: C:\Users\UGH\Desktop\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 54
+------------------------------------------------------------------
+
+Date: 24/11/2024 13:49:40
+Exception Class: Error
+Error Message: Call to undefined function json_response()
+Filename: C:\Users\UGH\Desktop\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 54
+------------------------------------------------------------------
+
+Date: 24/11/2024 13:54:05
+Exception Class: 64
+Error Message: Cannot declare class Lchat, because the name is already in use
+Filename: C:\Users\UGH\Desktop\Trip-Tales\app\controllers\Chat_controller.php
+Line Number: 4
+------------------------------------------------------------------
+
+Date: 24/11/2024 13:54:44
+Exception Class: Error
+Error Message: Class "Chat_model" not found
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Routine.php
+Line Number: 75
+------------------------------------------------------------------
+
+Date: 24/11/2024 13:54:44
+Exception Class: Error
+Error Message: Class "Chat_model" not found
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Routine.php
+Line Number: 75
+------------------------------------------------------------------
+
+Date: 24/11/2024 13:54:45
+Exception Class: Error
+Error Message: Class "Chat_model" not found
+Filename: C:\Users\UGH\Desktop\Trip-Tales\scheme\kernel\Routine.php
+Line Number: 75
+------------------------------------------------------------------
+
+Date: 24/11/2024 14:34:17
+Exception Class: 2
+Error Message: Undefined variable $friend
+Filename: C:\Users\UGH\Desktop\Trip-Tales\app\views\chat.php
+Line Number: 36
+------------------------------------------------------------------
+
+Date: 24/11/2024 14:35:07
+Exception Class: 2
+Error Message: Undefined variable $friend
+Filename: C:\Users\UGH\Desktop\Trip-Tales\app\views\chat.php
+Line Number: 36
+------------------------------------------------------------------
+

@@ -200,6 +200,7 @@ class Lauth {
     		return html_escape($row['firstname']);
     	}
 	}
+	
 
 	public function set_logged_out() {
 		$data = array(

@@ -16,6 +16,7 @@ class Home extends Controller {
 	public function index() {
         $data['tags'] = $this->entry->get_all_tags();
         $data['posts'] = $this->entry->get_all_entries();
-        $this->call->view('homepage', $data);
+       $this->call->view('homepage', $data);
+            //  $this->call->view('chat');
     }
 }

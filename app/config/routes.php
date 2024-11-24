@@ -56,3 +56,7 @@ $router->group('/auth', function() use ($router){
 $router->group('/posts', function() use ($router) {
     $router->match('/save-entry', 'Entry_controller::save_entry', ['POST', 'GET']);
 });
+
+
+$router->get('/chat', 'Chat_controller');
+$router->get('/chat/{receiver_id}', 'Chat_controller::get_recepient');

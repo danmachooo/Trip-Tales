@@ -6,6 +6,9 @@ class Entry_controller extends Controller {
     public function __construct()
     {
         parent::__construct();
+        if(! logged_in()) {
+            redirect('auth');
+        }
 
         $this->call->model('Entry_model', 'entry');
     }
