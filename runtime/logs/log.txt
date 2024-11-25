@@ -1995,3 +1995,24 @@ Filename: C:\laragon\www\Trip-Tales\app\views\chat.php
 Line Number: 37
 ------------------------------------------------------------------
 
+Date: 25/11/2024 8:40:59
+Exception Class: 2
+Error Message: Undefined array key "latitude"
+Filename: C:\laragon\www\Trip-Tales\scheme\kernel\Io.php
+Line Number: 125
+------------------------------------------------------------------
+
+Date: 25/11/2024 8:41:55
+Exception Class: 2
+Error Message: Undefined array key "tags"
+Filename: C:\laragon\www\Trip-Tales\scheme\kernel\Io.php
+Line Number: 125
+------------------------------------------------------------------
+
+Date: 25/11/2024 8:44:26
+Exception Class: Error
+Error Message: Call to undefined function json_response()
+Filename: C:\laragon\www\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 57
+------------------------------------------------------------------
+

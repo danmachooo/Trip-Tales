@@ -60,3 +60,11 @@ $router->group('/posts', function() use ($router) {
 
 $router->get('/chat', 'Chat_controller');
 $router->get('/chat/{receiver_id}', 'Chat_controller::get_recepient');
+
+$router->get('/Admin/admin_dashboard', 'Admin::admin_dashboard');
+$router->get('/Admin/admin_activity', 'Admin::admin_activity');      
+$router->get('/Admin/admin_users', 'Admin::admin_users');   
+$router->get('/Admin/admin_notification', 'Admin::admin_notification');   
+$router->get('/Admin/admin_setting', 'Admin::admin_setting');   
+
+$router->get('/profile', 'Home::profile'); 
