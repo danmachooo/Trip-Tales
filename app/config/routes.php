@@ -52,8 +52,3 @@ $router->group('/auth', function() use ($router){
     $router->match('/password-reset', 'Auth::password_reset', ['POST', 'GET']);
     $router->match('/set-new-password', 'Auth::set_new_password', ['POST', 'GET']);
 });
-$router->get('/Admin/admin_dashboard', 'Admin::admin_dashboard');
-$router->get('/Admin/admin_activity', 'Admin::admin_activity');      
-$router->get('/Admin/admin_users', 'Admin::admin_users');   
-$router->get('/Admin/admin_notification', 'Admin::admin_notification');   
-$router->get('/Admin/admin_setting', 'Admin::admin_setting');   
