@@ -15,13 +15,18 @@ class Chat_controller extends Controller {
     }
 
     public function index() {
-        $sender_id = $this->session->user_data('user_id');
-        $data = $this->$friend->get_all_friends($sender_id, $sender_id);
+        $sender_id = $this->session->userdata('user_id');
+        $data['friends'] = $this->friend->get_all_friends($sender_id, $sender_id);
+        
         $this->call->view('chat', $data);
     }
 
     public function get_recepient() {
-        $sender_id = $this->session->user_data('user_id');
+
+        if($_REQUEST !== 'GET'){
+            return;
+        }
+        $sender_id = $this->session->userdata('user_id');
         $receiver_id = $this->io->get('receiver_id');
 
         $data['friend'] = $this->chat->get_recepient_name($sender_id, $receiver_id);

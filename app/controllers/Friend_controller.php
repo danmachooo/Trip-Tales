@@ -31,22 +31,21 @@ class Friend_controller extends Controller {
     // }
 
     public function get_friend_requests(){
-        $sender_id = $this->session->user_data('user_id');
+        $sender_id = $this->session->userdata('user_id');
         $receiver_id = $this->io->post('receiver_id');
 
-        $data = $this->$friend->get_friend_requests($sender_id, $receiver_id);
+        $data = $this->friend->get_friend_requests($sender_id, $receiver_id);
         $this->call->view('/friends', $data);
     }
     
     public function get_all_friends() {
-        $sender_id = $this->session->user_data('user_id');
 
-        $data = $this->$friend->get_all_friends($sender_id, $sender_id);
+        $data = $this->friend->get_all_friends();
         $this->call->view('chats', $data);
     }
 
     public function update_friend_request() {
-        $sender_id = $this->session->user_data('user_id');
+        $sender_id = $this->session->userdata('user_id');
         $receiver_id = $this->io->post('receiver_id');
         $status = $this->io->post('status');
 

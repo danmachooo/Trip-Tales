@@ -28,16 +28,28 @@ class Friend_model extends Model {
             ->get_all();
     }
 
-    public function get_all_friends($sender_id){
-        $query = `
-            SELECT *
-            FROM friend_requests
-            WHERE (sender_id = ? AND status = 'accepted')
-            OR (receiver_id = ? AND status = 'accepted');
+    public function get_all_friends(){
+        $sender_id = $this->session->userdata('user_id');
 
-        `;
+        $where1 = [
+            'sender_id'=> $sender_id,
+            'status'=> 'accepted'
+        ];
+        $where2 = [
+            'receiver_id'=> $sender_id,
+            'status'=> 'accepted'
+        ];
 
-        return $this->db->raw($query, array($sender_id, $sender_id), PDO::FETCH_ASSOC); 
+        return $this->db->table('friend_requests')->where($where1)->or_where($where2)->get_all();
+
+        // $query = `
+        //     SELECT *
+        //     FROM friend_requests
+        //     WHERE (sender_id = ? AND status = 'accepted')
+        //     OR (receiver_id = ? AND status = 'accepted');
+        // `;
+
+        // return $this->db->raw($query, array($sender_id, $sender_id), PDO::FETCH_ASSOC); 
     }
     
 

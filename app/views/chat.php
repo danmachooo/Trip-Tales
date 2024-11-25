@@ -34,7 +34,7 @@ include APP_DIR.'views/templates/header.php';
                 <div class="bg-gray-900 border-b border-gray-700 p-4 flex justify-between items-center">
                     <div class="flex items-center">
                         <img id="selectedFriendAvatar" src="" alt="" class="w-10 h-10 rounded-full">
-                        <h2 id="selectedFriendName" class="ml-3 text-lg font-semibold text-gray-100"><?php html_escape(get_fullname(get_user_id(), $friend['id'])); ?></h2>
+                        <h2 id="selectedFriendName" class="ml-3 text-lg font-semibold text-gray-100"><?php //html_escape(get_fullname(user_id: get_user_id(), $friend['id'])); ?></h2>
                     </div>
                     <div class="flex space-x-2">
                         <button class="p-2 rounded-full hover:bg-gray-700 transition duration-200">

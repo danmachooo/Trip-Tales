@@ -1509,3 +1509,489 @@ Filename: C:\Users\UGH\Desktop\Trip-Tales\app\views\chat.php
 Line Number: 36
 ------------------------------------------------------------------
 
+Date: 25/11/2024 5:57:53
+Exception Class: PDOException
+Error Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'firstname' in 'field list'<div style="background-color:#000;color:#fff;padding:15px">Query: INSERT INTO users (firstname, lastname, birthday, password, email, email_token) VALUES (?, ?, ?, ?, ?, ?)</div>
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 273
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:00:26
+Exception Class: PDOException
+Error Message: SQLSTATE[HY000]: General error: 1364 Field 'bio' doesn't have a default value<div style="background-color:#000;color:#fff;padding:15px">Query: INSERT INTO users (firstname, lastname, birthday, password, email, email_token) VALUES (?, ?, ?, ?, ?, ?)</div>
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 273
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:00:59
+Exception Class: PDOException
+Error Message: SQLSTATE[HY000]: General error: 1364 Field 'bio' doesn't have a default value<div style="background-color:#000;color:#fff;padding:15px">Query: INSERT INTO users (firstname, lastname, birthday, password, email, email_token) VALUES (?, ?, ?, ?, ?, ?)</div>
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 273
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:01:03
+Exception Class: PDOException
+Error Message: SQLSTATE[HY000]: General error: 1364 Field 'bio' doesn't have a default value<div style="background-color:#000;color:#fff;padding:15px">Query: INSERT INTO users (firstname, lastname, birthday, password, email, email_token) VALUES (?, ?, ?, ?, ?, ?)</div>
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 273
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:01:58
+Exception Class: PDOException
+Error Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'te.photo_url' in 'field list'<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT te.id AS entry_id, te.destination, te.description, te.photo_url, te.latitude, te.longitude, te.created_at AS posted_date, u.firstname, u.lastname, GROUP_CONCAT(DISTINCT t.name ORDER BY t.name ASC SEPARATOR ", ") AS tags, COUNT(DISTINCT l.id) AS like_count, COUNT(DISTINCT c.id) AS comment_count, GROUP_CONCAT(
+                DISTINCT CONCAT(c.comment, " (", uc.firstname, " ", uc.lastname, ", ", DATE_FORMAT(c.created_at, "%Y-%m-%d %H:%i:%s"), ")")
+                ORDER BY c.created_at ASC SEPARATOR "; "
+            ) AS comments FROM travel_entries AS te JOIN users AS u ON te.user_id = u.id LEFT JOIN entry_tags AS et ON te.id = et.entry_id LEFT JOIN tags AS t ON et.tag_id = t.id LEFT JOIN likes AS l ON te.id = l.entry_id LEFT JOIN comments AS c ON te.id = c.entry_id LEFT JOIN users AS uc ON c.user_id = uc.id GROUP BY te.id, te.destination, te.description, te.photo_url, te.created_at, u.firstname, u.lastname ORDER BY te.created_at DESC</div>
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:02:43
+Exception Class: Error
+Error Message: Call to undefined method Session::user_data()
+Filename: C:\laragon\www\Trip-Tales\app\controllers\Chat_controller.php
+Line Number: 18
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:03:09
+Exception Class: Error
+Error Message: Call to undefined method Session::user_data()
+Filename: C:\laragon\www\Trip-Tales\app\controllers\Chat_controller.php
+Line Number: 18
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:04:56
+Exception Class: Error
+Error Message: Call to undefined method Session::user_data()
+Filename: C:\laragon\www\Trip-Tales\app\controllers\Chat_controller.php
+Line Number: 18
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:04:58
+Exception Class: Error
+Error Message: Call to undefined method Session::user_data()
+Filename: C:\laragon\www\Trip-Tales\app\controllers\Chat_controller.php
+Line Number: 18
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:04:58
+Exception Class: Error
+Error Message: Call to undefined method Session::user_data()
+Filename: C:\laragon\www\Trip-Tales\app\controllers\Chat_controller.php
+Line Number: 18
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:04:58
+Exception Class: Error
+Error Message: Call to undefined method Session::user_data()
+Filename: C:\laragon\www\Trip-Tales\app\controllers\Chat_controller.php
+Line Number: 18
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:05:24
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:05:31
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:06:47
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:08:54
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:08:55
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:08:55
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:08:55
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:08:55
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:08:55
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:09:26
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:09:30
+Exception Class: ParseError
+Error Message: syntax error, unexpected token ";", expecting ")"
+Filename: C:\laragon\www\Trip-Tales\app\models\Friend_model.php
+Line Number: 40
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:09:38
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:10:45
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:10:46
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:10:46
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:10:46
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:10:46
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:10:59
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:11:19
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:11:20
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:11:20
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:11:21
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:11:42
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:11:42
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:11:45
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:11:58
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:12:00
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:12:00
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:12:00
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:12:00
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:12:00
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:12:00
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:12:01
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:12:01
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:12:01
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:12:01
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:12:01
+Exception Class: 8192
+Error Message: trim(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\laragon\www\Trip-Tales\scheme\database\Database.php
+Line Number: 245
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:15:29
+Exception Class: 2
+Error Message: Undefined variable $friend
+Filename: C:\laragon\www\Trip-Tales\app\views\chat.php
+Line Number: 37
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:16:16
+Exception Class: 2
+Error Message: Undefined array key "id"
+Filename: C:\laragon\www\Trip-Tales\app\views\chat.php
+Line Number: 37
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:16:46
+Exception Class: 2
+Error Message: Undefined array key "user_id"
+Filename: C:\laragon\www\Trip-Tales\app\views\chat.php
+Line Number: 37
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:16:53
+Exception Class: 2
+Error Message: Undefined array key "sender_id"
+Filename: C:\laragon\www\Trip-Tales\app\views\chat.php
+Line Number: 37
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:17:13
+Exception Class: 2
+Error Message: Undefined array key "id"
+Filename: C:\laragon\www\Trip-Tales\app\views\chat.php
+Line Number: 37
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:20:50
+Exception Class: 2
+Error Message: Undefined array key "receiver_id"
+Filename: C:\laragon\www\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:21:19
+Exception Class: 2
+Error Message: Undefined array key "receiver_id"
+Filename: C:\laragon\www\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:21:20
+Exception Class: 2
+Error Message: Undefined array key "receiver_id"
+Filename: C:\laragon\www\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:21:21
+Exception Class: 2
+Error Message: Undefined array key "receiver_id"
+Filename: C:\laragon\www\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:21:21
+Exception Class: 2
+Error Message: Undefined array key "receiver_id"
+Filename: C:\laragon\www\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:21:46
+Exception Class: 2
+Error Message: Undefined array key "receiver_id"
+Filename: C:\laragon\www\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:21:46
+Exception Class: 2
+Error Message: Undefined array key "receiver_id"
+Filename: C:\laragon\www\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:21:46
+Exception Class: 2
+Error Message: Undefined array key "receiver_id"
+Filename: C:\laragon\www\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:21:47
+Exception Class: 2
+Error Message: Undefined array key "receiver_id"
+Filename: C:\laragon\www\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:21:47
+Exception Class: 2
+Error Message: Undefined array key "receiver_id"
+Filename: C:\laragon\www\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:21:47
+Exception Class: 2
+Error Message: Undefined array key "receiver_id"
+Filename: C:\laragon\www\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:22:07
+Exception Class: 64
+Error Message: Cannot use positional argument after named argument
+Filename: C:\laragon\www\Trip-Tales\app\views\chat.php
+Line Number: 37
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:22:20
+Exception Class: 64
+Error Message: Cannot use positional argument after named argument
+Filename: C:\laragon\www\Trip-Tales\app\views\chat.php
+Line Number: 37
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:22:21
+Exception Class: 64
+Error Message: Cannot use positional argument after named argument
+Filename: C:\laragon\www\Trip-Tales\app\views\chat.php
+Line Number: 37
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:22:21
+Exception Class: 64
+Error Message: Cannot use positional argument after named argument
+Filename: C:\laragon\www\Trip-Tales\app\views\chat.php
+Line Number: 37
+------------------------------------------------------------------
+
+Date: 25/11/2024 6:22:21
+Exception Class: 64
+Error Message: Cannot use positional argument after named argument
+Filename: C:\laragon\www\Trip-Tales\app\views\chat.php
+Line Number: 37
+------------------------------------------------------------------
+
