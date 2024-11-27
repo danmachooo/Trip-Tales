@@ -2016,3 +2016,17 @@ Filename: C:\laragon\www\Trip-Tales\app\controllers\Entry_controller.php
 Line Number: 57
 ------------------------------------------------------------------
 
+Date: 27/11/2024 8:21:08
+Exception Class: Error
+Error Message: Call to undefined function json_response()
+Filename: C:\laragon\www\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 57
+------------------------------------------------------------------
+
+Date: 27/11/2024 9:12:09
+Exception Class: Error
+Error Message: Call to undefined function json_response()
+Filename: C:\laragon\www\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 57
+------------------------------------------------------------------
+
