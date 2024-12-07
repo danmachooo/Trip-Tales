@@ -58,8 +58,11 @@ $router->group('/posts', function() use ($router) {
 });
 
 
-$router->get('/chat', 'Chat_controller');
+$router->get('/chat', 'Chat_controller::index');
+$router->post('/chat/send-message', 'Chat_controller::send_message');
 $router->get('/chat/{receiver_id}', 'Chat_controller::get_recepient');
+$router->post('/chat/{receiver_id}', 'Chat_controller::get_recepient');
+
 
 $router->get('/Admin/admin_dashboard', 'Admin::admin_dashboard');
 $router->get('/Admin/admin_activity', 'Admin::admin_activity');      
