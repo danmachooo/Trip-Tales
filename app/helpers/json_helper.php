@@ -9,7 +9,6 @@ if ( ! function_exists('json_response'))
             'message' => $message,
             'data' => $data
         ]);
-        exit;
     }
 }
 

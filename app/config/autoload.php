@@ -82,7 +82,7 @@ $autoload['libraries'] = array('database', 'session', 'form_validation', 'Lauth'
 |
 |	$autoload['helpers'] = array('url', 'file');
 */
-$autoload['helpers'] = array('url', 'common', 'security', 'json_response');
+$autoload['helpers'] = array('url', 'common', 'security', 'json');
 
 /*
 | -------------------------------------------------------------------

@@ -8,34 +8,56 @@ include APP_DIR.'views/templates/header.php';
         include APP_DIR.'views/templates/nav.php';
         ?> 
 
-        <div class="flex h-screen pt-16">
+        <div class="flex h-screen pt-16 bg-gray-800">
             <!-- Sidebar -->
-            <div class="w-1/4 bg-gray-900 border-r border-gray-700 flex flex-col">
-                <div class="p-4">
-                    <h2 class="text-xl font-semibold mb-4 text-gray-100">Chats</h2>
-                    <div class="relative">
-                        <input 
-                            type="text" 
-                            placeholder="Search friends" 
-                            class="w-full pl-10 pr-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                        >
-                        <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
-                    </div>
+            <div class="w-1/4 bg-gray-900 border-r border-gray-700 flex flex-col p-4">
+                <!-- Sidebar Title -->
+                <h2 class="text-xl font-semibold mb-4 text-gray-100">Chats</h2>
+                
+                <!-- Search Box -->
+                <div class="relative mb-4">
+                    <input 
+                        type="text" 
+                        placeholder="Search friends" 
+                        class="w-full pl-10 pr-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    >
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
                 </div>
+
+                <!-- Friends List -->
                 <div id="friendsList" class="flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-700">
-                    <!-- Friends list will be populated here -->
-                     
+                    <?php foreach($friends as $friend): ?>
+                    <a href="<?= site_url('chat/' . $friend['id']) ?>" class="block">
+                        <div class="flex items-center mb-4 p-2 rounded-lg hover:bg-gray-700 cursor-pointer friend-item">
+                            <img src="<?= $friend['profile_photo'] ?? 'https://picsum.photos/id/237/50' ?>" alt="Profile Photo" class="w-12 h-12 rounded-full object-cover">
+                            <div class="ml-4">
+                                <p class="text-gray-200 font-semibold"><?= html_escape($friend['firstname']) . ' ' . html_escape($friend['lastname']) ?></p>
+                                <p class="text-gray-400 text-sm"><?= html_escape($friend['email']) ?></p>
+                            </div>
+                        </div>
+                    </a>
+                    <?php endforeach; ?>
                 </div>
             </div>
 
-            <!-- Chat container -->
+            <!-- Chat Container -->
             <div class="flex-1 flex flex-col bg-gray-900">
-                <!-- Chat header -->
+                <!-- Chat Header -->
                 <div class="bg-gray-900 border-b border-gray-700 p-4 flex justify-between items-center">
-                    <div class="flex items-center">
-                        <img id="selectedFriendAvatar" src="" alt="" class="w-10 h-10 rounded-full">
-                        <h2 id="selectedFriendName" class="ml-3 text-lg font-semibold text-gray-100"><?php //html_escape(get_fullname(user_id: get_user_id(), $friend['id'])); ?></h2>
-                    </div>
+                    <?php if (isset($recepient) && !empty($recepient)): ?>
+                        <?php foreach($recepient as $r): ?>
+                        <div class="flex items-center">
+                            <img id="selectedFriendAvatar" src="<?= $r['profile_photo'] ?? 'https://picsum.photos/id/237/50' ?>" alt="Profile Photo" class="w-10 h-10 rounded-full">
+                            <h2 id="selectedFriendName" class="ml-3 text-lg font-semibold text-gray-100">
+                                <?= isset($r) ? $r['firstname'] . ' ' . $r['lastname'] : 'Select a friend' ?>
+                            </h2>
+                            <input type="hidden" id="selectedChatId" value="<?= $chat['id'] ?? '' ?>">
+                        </div>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <h2 class="ml-3 text-lg font-semibold text-gray-100">No recipient selected</h2>
+                    <?php endif; ?>
+
                     <div class="flex space-x-2">
                         <button class="p-2 rounded-full hover:bg-gray-700 transition duration-200">
                             <i class="fas fa-phone text-gray-400 hover:text-blue-400"></i>
@@ -51,10 +73,26 @@ include APP_DIR.'views/templates/header.php';
 
                 <!-- Messages -->
                 <div id="messagesContainer" class="flex-1 p-4 overflow-y-auto scrollbar-hide">
-                    <!-- Messages will be populated here -->
+                    <?php if(isset($messages) && is_array($messages)): ?>
+                        <?php foreach($messages as $message): ?>
+                            <div class="mb-4 <?= $message['sender_id'] == $user_id ? 'text-right' : 'text-left' ?>">
+                                <div class="flex items-center <?= $message['sender_id'] == $user_id ? 'justify-end' : 'justify-start' ?> mb-1">
+                                    <img src="<?= $message['sender_profile_photo'] ?? 'https://picsum.photos/id/237/50' ?>" alt="Sender's photo" class="w-8 h-8 rounded-full mr-2">
+                                    <span class="text-sm text-gray-400"><?= html_escape($message['sender_firstname'] . ' ' . $message['sender_lastname']) ?></span>
+                                </div>
+                                <div class="inline-block p-2 rounded-lg <?= $message['sender_id'] == $user_id ? 'bg-blue-500 text-white' : 'bg-gray-700 text-gray-200' ?>">
+                                    <?= html_escape($message['message']) ?>
+                                </div>
+                                <div class="text-xs text-gray-500 mt-1">
+                                    <?= date('M d, Y H:i', strtotime($message['sent_at'])) ?>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <p class="text-center text-gray-500">No messages yet. Start a conversation!</p>
+                    <?php endif; ?>
                 </div>
-
-                <!-- Message input -->
+                <!-- Message Input -->
                 <form id="messageForm" class="bg-gray-800 border-t border-gray-700 p-4">
                     <div class="flex items-center">
                         <input 
@@ -73,38 +111,74 @@ include APP_DIR.'views/templates/header.php';
                 </form>
             </div>
         </div>
+
     </div>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    $(document).ready(function () {
-        const userId = <?= html_escape(get_user_id()); ?>
+$(document).ready(function () {
+    function scrollToBottom() {
+        var messagesContainer = document.getElementById('messagesContainer');
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
 
+    function updateInbox() {
+        var chatId = $('#selectedChatId').val();
         $.ajax({
-            url: '<?= site_url('user/get_friends')?>', // Update to your server path
+            url: '<?= site_url('chat/get-messages') ?>',
             method: 'GET',
-            data: { user_id: userId },
-            dataType: 'json',
-            success: function (response) {
-                if (response.error) {
-                    console.error(response.error);
+            data: { chat_id: chatId },
+            success: function(response) {
+                var parsedResponse = JSON.parse(response);
+                if (parsedResponse.success) {
+                    $('#messagesContainer').html(parsedResponse.messages);
+                    scrollToBottom();
                 } else {
-                    console.log('Friends:', response);
-                    response.forEach(friend => {
-                        $('#friendsList').append(`
-                            <div>
-                                <img src="${friend.profile_photo || 'default-photo.jpg'}" alt="Profile Photo" width="50">
-                                <p>${friend.firstname} ${friend.lastname}</p>
-                                <p>${friend.email}</p>
-                            </div>
-                        `);
-                    });
+                    console.error('Error fetching messages:', parsedResponse.message);
                 }
             },
-            error: function (xhr, status, error) {
-                console.error('Error:', error);
+            error: function(xhr, status, error) {
+                console.error('Error fetching messages:', error);
+            }
+        });
+    }
+
+    $('#messageForm').on('submit', function(e) {
+        e.preventDefault();
+        var message = $('#messageInput').val();
+        var chatId = $('#selectedChatId').val();
+
+        if (message.trim() === '' || !chatId) {
+            return;
+        }
+
+        $.ajax({
+            url: '<?= site_url('chat/send-message') ?>',
+            method: 'POST',
+            data: {
+                chat_id: chatId,
+                message: message
+            },
+            success: function(response) {
+                var parsedResponse = JSON.parse(response);
+                if (parsedResponse.success) {
+                    $('#messageInput').val('');
+                    updateInbox();
+                } else {
+                    console.error('Error sending message:', parsedResponse.message);
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error('Error sending message:', error);
             }
         });
     });
+
+    // Initial scroll to bottom
+    scrollToBottom();
+
+    // Set up periodic inbox update (every 5 seconds)
+    setInterval(updateInbox, 2000);
+});
 </script>

@@ -1,4 +1,4 @@
-<header class="bg-gray-800 text-white fixed w-full top-0 z-50">
+<header class="bg-gray-800 text-white fixed w-full top-0 z-40">
     <div class="container mx-auto px-4 py-3 flex justify-between items-center">
         <h1 class="text-2xl font-bold">
             <a href="<?= site_url(); ?>">Trip Tales</a>

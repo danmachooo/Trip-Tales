@@ -80,16 +80,72 @@ class Entry_model extends Model {
         ->group_by('te.id, te.destination, te.description, te.photo_url, te.created_at, u.firstname, u.lastname')
         ->order_by('te.created_at', 'DESC')
         ->get_all();
-    
-
-
-
         // return $this->db->raw($query, array(), pdo::FETCH_ASSOC);
     }
 
     public function get_all_tags(){
         return $this->db->table('tags')->get_all();
     }
+
+    public function toggle_like($entry_id, $user_id) {
+        $data = array(
+            'entry_id' => $entry_id,
+            'user_id' => $user_id
+        );
+        if ($this->is_liked_by_user($entry_id, $user_id)) {
+            return $this->db->table('likes')
+                     ->where('entry_id', $entry_id)
+                     ->where('user_id', $user_id)
+                     ->delete();
+        } else {
+            return $this->db->table('likes')->insert($data);
+        }
+    }
+
+    public function add_comment($entry_id, $user_id, $comment) {
+        $data = array(
+            'entry_id' => $entry_id,
+            'user_id' => $user_id,
+            'comment' => $comment
+        );
+        return $this->db->table('comments')->insert($data);
+    }
+
+    public function get_comments($entry_id) {
+        return $this->db->table('comments c')
+                        ->join('users u', 'c.user_id = u.id')
+                        ->where('c.entry_id', $entry_id)
+                        ->order_by('c.created_at', 'DESC')
+                        ->get_all();
+    }
+
+    public function get_five_comments($entry_id) {
+        return $this->db->table('comments c')
+                        ->join('users u', 'c.user_id = u.id')
+                        ->where('c.entry_id', $entry_id)
+                        ->order_by('c.created_at', 'DESC')
+                        ->limit(5)
+                        ->get_all();
+    }
+
+    public function get_like_count($entry_id) {
+        return $this->db->table('likes')
+                        ->where('entry_id', $entry_id)
+                        ->select_count('id', 'total_likes');
+    }
+
+    public function is_liked_by_user($entry_id, $user_id) {
+        $query = 'SELECT COUNT(id) > 0 FROM likes WHERE entry_id = ? AND user_id = ?';
+        return $this->db->raw($query, array($entry_id, $user_id), PDO::FETCH_ASSOC);
+
+
+        // return $this->db->table('likes')
+        //                 ->where('entry_id', $entry_id)
+        //                 ->where('user_id', $user_id)
+        //                 ->select_count('id') > 0
+        //                 ->get();
+    }
+
 
 }
 ?>

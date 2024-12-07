@@ -91,11 +91,7 @@ include APP_DIR.'views/templates/header.php';
                         </form>
                     </div>
                 </div>
-
-
-
                     <!-- Post -->
-
                     <?php foreach ($posts as $post): ?>
                         <input type="hidden" id="latitude" name="latitude" value="<?=$post['latitude']?>">
                         <input type="hidden" id="longitude" name="longitude" value="<?=$post['longitude']?>">
@@ -136,32 +132,32 @@ include APP_DIR.'views/templates/header.php';
                             <!-- New Map Area -->
                             <div class="mb-4">
                                 <h4 class="font-bold mb-2">Location</h4>
-                                <div id="map-<?= $post['entry_id'] ?>" class="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
+                                <div id="map-<?= $post['entry_id'] ?>" class="bg-gray-200 rounded-lg h-48 flex z-0 items-center justify-center">
                                     <!-- <p class="text-gray-500">Map of Bali will be displayed here</p> -->
                                 </div>
                             </div>
                             <div class="flex items-center justify-between mt-4">
-                                <button class="flex items-center gap-2 text-gray-600 hover:text-blue-600" id="likeButton">
+                                <button class="like-button flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors duration-200" 
+                                        data-entry-id="<?= $post['entry_id'] ?>"
+                                        data-liked="<?= $post['is_liked'] ? 'true' : 'false' ?>">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                     </svg>
-                                    <span id="likeCount"><?=$post['like_count']?></span> Likes
+                                    <span class="like-count" data-entry-id="<?= $post['entry_id'] ?>"><?=$post['like_count']?></span> Likes
                                 </button>
                                 <button class="text-gray-600 hover:text-blue-600" id="showComments">
-                                    <span id="commentCount"><?=$post['comment_count']?></span> Comments
+                                    <span id="commentCount"><?=count( $post['comments'])?></span> Comments
                                 </button>
                             </div>
-                            <div id="commentSection" class="mt-4">
+                            <div id="commentSection-<?= $post['entry_id'] ?>" class="mt-4">
                                 <div class="border-t pt-4 mb-4">
                                     <h4 class="font-bold mb-2">Comments</h4>
-                                    <ul id="commentList" class="space-y-2">
+                                    <ul id="commentList-<?= $post['entry_id'] ?>" class="space-y-2">
                                         <?php if (!empty($post['comments'])): ?>
-                                            <?php
-                                            // Explode the comments from the SQL result into an array
-                                            $comments = explode('; ', $post['comments']);
-                                            foreach ($comments as $comment): ?>
+                                            <?php foreach ($post['comments'] as $comment): ?>
                                                 <li class="border-b pb-2">
-                                                    <p>"<?php echo htmlspecialchars($comment); ?>"</p>
+                                                    <strong><?= $comment['firstname'] ?> <?= $comment['lastname'] ?>:</strong>
+                                                    <p><?= htmlspecialchars($comment['comment']) ?></p>
                                                 </li>
                                             <?php endforeach; ?>
                                         <?php else: ?>
@@ -169,9 +165,8 @@ include APP_DIR.'views/templates/header.php';
                                         <?php endif; ?>
                                     </ul>
                                 </div>
-                                <form id="commentForm" class="flex gap-2" method="POST" action="post_comment.php">
-                                    <input type="hidden" name="entry_id" value="<?php echo $post['entry_id']; ?>"> <!-- Pass entry ID -->
-                                    <input type="text" name="comment" id="commentInput" placeholder="Add a comment..." class="flex-grow p-2 border rounded-lg" required>
+                                <form class="comment-form flex gap-2" data-entry-id="<?= $post['entry_id'] ?>">
+                                    <input type="text" name="comment" placeholder="Add a comment..." class="flex-grow p-2 border rounded-lg" required>
                                     <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Post</button>
                                 </form>
                             </div>
@@ -308,7 +303,7 @@ const pinLocation = () => {
     }
 };
 
-// Image Upload Preview
+// Image Upload Preview 
 $('#image-upload').on('change', function (event) {
     const file = event.target.files[0];
     if (file) {
@@ -324,6 +319,89 @@ $('#image-upload').on('change', function (event) {
 
 // Form Submission with AJAX
 $(document).ready(() => {
+    // Toggle like
+    $('.like-button').on('click', function() {
+    const entryId = $(this).data('entry-id');
+    const $button = $(this);
+    const $likeCount = $('.like-count[data-entry-id="' + entryId + '"]');
+    
+    $.ajax({
+        url: '<?= site_url("posts/toggle_like"); ?>',
+        type: 'POST',
+        data: { entry_id: entryId },
+        success: function(response) {
+            if (response.success) {
+                $likeCount.text(response.data.like_count);
+                
+                // Toggle the liked state
+                if ($button.data('liked') === 'true') {
+                    $button.data('liked', 'false');
+                    $button.removeClass('text-blue-600').addClass('text-gray-600');
+                } else {
+                    $button.data('liked', 'true');
+                    $button.removeClass('text-gray-600').addClass('text-blue-600');
+                }
+            } else {
+                alert(response.message);
+            }
+        }
+    });
+});
+    // Add comment
+    $('.comment-form').on('submit', function(e) {
+        e.preventDefault();
+        const entryId = $(this).data('entry-id');
+        const comment = $(this).find('input[name="comment"]').val();
+        $.ajax({
+            url: '<?= site_url("posts/add_comment"); ?>',
+            type: 'POST',
+            data: { entry_id: entryId, comment: comment },
+            success: function(response) {
+                var parsedResponse = JSON.parse(response);
+
+                if (parsedResponse.success) {
+                    // Clear the input
+                    $('.comment-form input[name="comment"]').val('');
+                    // Refresh the comments list
+                    refreshComments(entryId);
+                    alert(parsedResponse.data);
+
+                } else {
+                    alert(parsedResponse.data);
+                }
+            }
+        });
+    });
+
+    // Function to refresh comments
+    function refreshComments(entryId) {
+    $.ajax({
+        url: '<?= site_url("posts/get_comments"); ?>',
+        type: 'GET',
+        data: { entry_id: entryId },
+        success: function(response) {
+            var parsedResponse = JSON.parse(response);
+
+            if (parsedResponse.success) {
+                // Update the comments list in the DOM
+                let commentsHtml = '';
+                parsedResponse.data.comments.forEach(function(comment) {
+                    commentsHtml += '<li class="border-b pb-2">' +
+                                    '<strong>' + comment.firstname + ' ' + comment.lastname + ':</strong> ' +
+                                    '<p>' + comment.comment + '</p>' +
+                                    '</li>';
+                });
+                $('#commentList-' + entryId).html(commentsHtml);
+                // Update comment count
+                $('#commentCount-' + entryId).text(parsedResponse.data.comments.length);
+            } else {
+                alert(parsedResponse.message);
+            }
+        }
+    });
+}
+
+
     $('#entry-form').on('submit', function (e) {
         e.preventDefault(); // Prevent the default form submission
 
@@ -420,6 +498,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 .addTo(map)
                 .bindPopup(post.destination)
                 .openPopup();
+        }
+    });
+
+    // Set initial like button colors
+    $('.like-button').each(function() {
+        if ($(this).data('liked') === 'true') {
+            $(this).addClass('text-blue-600').removeClass('text-gray-600');
         }
     });
 });
