@@ -2,6 +2,7 @@
 defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 
 class Entry_controller extends Controller {
+    protected $user_id;
     
     public function __construct()
     {
@@ -11,20 +12,31 @@ class Entry_controller extends Controller {
         }
 
         $this->call->model('Entry_model', 'entry');
+        $this->user_id = $this->session->userdata('user_id');;
     }
 
     public function get_all_entries()
     {
+        $posts = $this->entry->get_all_entries();
+        $current_user_id = get_user_id();
+
+        foreach ($posts as &$post) {
+            $post['is_liked'] = $this->entry->is_liked_by_user($post['entry_id'], $current_user_id);
+            $post['comments'] = $this->entry->get_five_comments($post['entry_id']);
+        }
+        $data['tags'] = $this->entry->get_all_tags();
         $data['posts'] = $this->entry->get_all_entries();
+        $data['posts'] = $posts;
         $this->call->view('homepage', $data);
     }
+
 
     public function save_entry()
     {
         // Check if the form was submitted
         if (!$this->form_validation->submitted()) {
             // Respond with an error if form not submitted correctly
-            return json_response(false, 'Invalid form submission.');
+            json_response(false, 'Invalid form submission.');
         }
 
         // Gather form data
@@ -44,7 +56,7 @@ class Entry_controller extends Controller {
 
         if (!$this->upload->do_upload()) {
             // Respond with upload errors
-            return json_response(false, 'File upload failed.', $this->upload->get_errors());
+            json_response(false, 'File upload failed.', $this->upload->get_errors());
         }
 
         $filename = $this->upload->get_filename();
@@ -54,12 +66,77 @@ class Entry_controller extends Controller {
 
         if ($is_saved) {
             // Respond with success
-            return json_response(true, 'Entry saved successfully!');
+            json_response(true, 'Entry saved successfully!');
         } else {
             // Respond with database error
-            return json_response(false, 'Failed to save entry to the database.');
+            json_response(false, 'Failed to save entry to the database.');
         }
     }
+
+    public function toggle_like() {
+        $entry_id = $this->io->post('entry_id');
+        $user_id = $this->user_id;
+        $this->entry->toggle_like($entry_id, $user_id);
+        $like_count = $this->entry->get_like_count($entry_id);
+
+        echo json_encode([
+            'success' => true,
+            'message' => "Success post",
+            'data' =>$like_count
+        ]);
+     }
+
+    public function add_comment() {
+        $entry_id = $this->io->post('entry_id');
+        $user_id = $this->user_id;
+        $comment = $this->io->post('comment');
+
+        if (empty($comment)) {
+            echo json_encode([
+                'success' => true,
+                'message' => "Comment cannot be empty",   
+            ]); 
+        }
+
+        $result = $this->entry->add_comment($entry_id, $user_id, $comment);
+
+        if ($result) {
+            $comments = $this->entry->get_comments($entry_id);
+            echo json_encode([
+                'success' => true,
+                'message' => "Comment added successfully",
+                'data' => $comments   
+            ]);   
+             // return ['success' => true, 'message' => 'Comment added successfully', 'data' => $comments];
+        } else {
+            // return ['success' => false, 'message' => 'Failed to add comment'];
+            $comments = $this->entry->get_comments($entry_id);
+            echo json_encode([
+                'success' => false,
+                'message' => 'Failed to add comment',
+                'data' => $comments   
+            ]);  
+        }
+    }
+
+    public function get_comments() {
+        $entry_id = $this->io->get('entry_id');
+        $comments = $this->entry->get_comments($entry_id);
+        echo json_encode([
+            'success' => true,
+            'message' => 'Fetched comment',
+            'data' => $comments   
+        ]);  
+    }
+    public function get_five_comments() {
+        $entry_id = $this->io->get('entry_id');
+        $comments = $this->entry->get_five_comments($entry_id);
+        echo json_encode([
+            'success' => true,
+            'message' => 'Fetched comment',
+            'data' => $comments   
+        ]);      }
+
 
 }
 ?>

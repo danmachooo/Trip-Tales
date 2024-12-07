@@ -44,7 +44,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 */
 
 $router->get('/', 'Auth');
-$router->get('/home', 'Home');
+$router->get('/home', 'Entry_controller::get_all_entries');
 $router->group('/auth', function() use ($router){
     $router->match('/register', 'Auth::register', ['POST', 'GET']);
     $router->match('/login', 'Auth::login', ['POST', 'GET']);
@@ -55,8 +55,24 @@ $router->group('/auth', function() use ($router){
 
 $router->group('/posts', function() use ($router) {
     $router->match('/save-entry', 'Entry_controller::save_entry', ['POST', 'GET']);
+    $router->post('/toggle_like', 'Entry_controller::toggle_like');
+    $router->post('/add_comment', 'Entry_controller::add_comment');
+    $router->get('/get_comments', 'Entry_controller::get_comments');
 });
 
 
-$router->get('/chat', 'Chat_controller');
+
+$router->get('/chat', 'Chat_controller::index');
+$router->post('/chat/send-message', 'Chat_controller::send_message');
+$router->get('/chat/get-messages', 'Chat_controller::get_messages');
 $router->get('/chat/{receiver_id}', 'Chat_controller::get_recepient');
+$router->post('/chat/{receiver_id}', 'Chat_controller::get_recepient');
+
+
+$router->get('/Admin/admin_dashboard', 'Admin::admin_dashboard');
+$router->get('/Admin/admin_activity', 'Admin::admin_activity');      
+$router->get('/Admin/admin_users', 'Admin::admin_users');   
+$router->get('/Admin/admin_notification', 'Admin::admin_notification');   
+$router->get('/Admin/admin_setting', 'Admin::admin_setting');   
+
+$router->get('/profile', 'Home::profile'); 

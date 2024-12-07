@@ -19,4 +19,9 @@ class Home extends Controller {
        $this->call->view('homepage', $data);
             //  $this->call->view('chat');
     }
+
+    public function profile() {
+		$this->call->view('/profile');
+	}
+
 }

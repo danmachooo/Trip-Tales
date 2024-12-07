@@ -2,6 +2,7 @@
 defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 
 class Friend_controller extends Controller {
+    protected $user_id;
     
     public function __construct()
     {
@@ -10,6 +11,7 @@ class Friend_controller extends Controller {
         if(! logged_in()) {
             redirect('auth');
         }
+        $this->user_id = $this->session->userdata('user_id');
 
     }
 
@@ -31,22 +33,14 @@ class Friend_controller extends Controller {
     // }
 
     public function get_friend_requests(){
-        $sender_id = $this->session->user_data('user_id');
         $receiver_id = $this->io->post('receiver_id');
 
-        $data = $this->$friend->get_friend_requests($sender_id, $receiver_id);
-        $this->call->view('/friends', $data);
-    }
-    
-    public function get_all_friends() {
-        $sender_id = $this->session->user_data('user_id');
-
-        $data = $this->$friend->get_all_friends($sender_id, $sender_id);
-        $this->call->view('chats', $data);
+        $data = $this->friend->get_friend_requests($this->user_id, $receiver_id);
+        $this->call->view('friends', $data);
     }
 
     public function update_friend_request() {
-        $sender_id = $this->session->user_data('user_id');
+        $sender_id = $this->session->userdata('user_id');
         $receiver_id = $this->io->post('receiver_id');
         $status = $this->io->post('status');
 
