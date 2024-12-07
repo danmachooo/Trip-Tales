@@ -76,6 +76,10 @@ include APP_DIR.'views/templates/header.php';
                     <?php if(isset($messages) && is_array($messages)): ?>
                         <?php foreach($messages as $message): ?>
                             <div class="mb-4 <?= $message['sender_id'] == $user_id ? 'text-right' : 'text-left' ?>">
+                                <div class="flex items-center <?= $message['sender_id'] == $user_id ? 'justify-end' : 'justify-start' ?> mb-1">
+                                    <img src="<?= $message['sender_profile_photo'] ?? 'https://picsum.photos/id/237/50' ?>" alt="Sender's photo" class="w-8 h-8 rounded-full mr-2">
+                                    <span class="text-sm text-gray-400"><?= html_escape($message['sender_firstname'] . ' ' . $message['sender_lastname']) ?></span>
+                                </div>
                                 <div class="inline-block p-2 rounded-lg <?= $message['sender_id'] == $user_id ? 'bg-blue-500 text-white' : 'bg-gray-700 text-gray-200' ?>">
                                     <?= html_escape($message['message']) ?>
                                 </div>
@@ -111,9 +115,35 @@ include APP_DIR.'views/templates/header.php';
     </div>
 </body>
 
-<<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 $(document).ready(function () {
+    function scrollToBottom() {
+        var messagesContainer = document.getElementById('messagesContainer');
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+
+    function updateInbox() {
+        var chatId = $('#selectedChatId').val();
+        $.ajax({
+            url: '<?= site_url('chat/get-messages') ?>',
+            method: 'GET',
+            data: { chat_id: chatId },
+            success: function(response) {
+                var parsedResponse = JSON.parse(response);
+                if (parsedResponse.success) {
+                    $('#messagesContainer').html(parsedResponse.messages);
+                    scrollToBottom();
+                } else {
+                    console.error('Error fetching messages:', parsedResponse.message);
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error('Error fetching messages:', error);
+            }
+        });
+    }
+
     $('#messageForm').on('submit', function(e) {
         e.preventDefault();
         var message = $('#messageInput').val();
@@ -133,21 +163,8 @@ $(document).ready(function () {
             success: function(response) {
                 var parsedResponse = JSON.parse(response);
                 if (parsedResponse.success) {
-                    var newMessage = `
-                        <div class="mb-4 text-right">
-                            <div class="inline-block p-2 rounded-lg bg-blue-500 text-white">
-                                ${message}
-                            </div>
-                            <div class="text-xs text-gray-500 mt-1">
-                                Just now
-                            </div>
-                        </div>
-                    `;
-                    $('#messagesContainer').append(newMessage);
                     $('#messageInput').val('');
-                    
-                    // Scroll to the bottom of the messages container
-                    $('#messagesContainer').scrollTop($('#messagesContainer')[0].scrollHeight);
+                    updateInbox();
                 } else {
                     console.error('Error sending message:', parsedResponse.message);
                 }
@@ -157,5 +174,11 @@ $(document).ready(function () {
             }
         });
     });
+
+    // Initial scroll to bottom
+    scrollToBottom();
+
+    // Set up periodic inbox update (every 5 seconds)
+    setInterval(updateInbox, 2000);
 });
 </script>

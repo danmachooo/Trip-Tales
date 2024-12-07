@@ -68,22 +68,33 @@ class Chat_model extends Model {
 
     public function get_messages($chat_id)
     {
-        $query = "
-            SELECT 
-                m.id AS message_id,
-                m.chat_id,
-                m.sender_id,
-                m.message,
-                m.sent_at,
-                m.seen
-            FROM 
-                messages m
-            WHERE 
-                m.chat_id = ?
-            ORDER BY 
-                m.sent_at ASC
-        ";
-        return $this->db->raw($query, array($chat_id), PDO::FETCH_ASSOC);
+        // $query = "
+        //     SELECT 
+        //         m.id AS message_id,
+        //         m.chat_id,
+        //         m.sender_id,
+        //         m.message,
+        //         m.sent_at,
+        //         m.seen,
+        //         u.firstname AS sender_firstname,
+        //         u.lastname AS sender_lastname,
+        //         u.profile_photo AS sender_profile_photo
+        //     FROM 
+        //         messages m
+        //     JOIN 
+        //         users u ON m.sender_id = u.id
+        //     WHERE 
+        //         m.chat_id = ?
+        //     ORDER BY 
+        //         m.sent_at ASC
+        // ";
+
+        return $this->db->table("messages as m")
+                ->select("m.id AS message_id, m.chat_id, m.sender_id, m.message, m.sent_at, m.seen, u.firstname AS sender_firstname, u.lastname AS sender_lastname, u.profile_photo AS sender_profile_photo")
+                ->join("users as u", "m.sender_id = u.id")
+                ->where("m.chat_id", $chat_id)
+                ->order_by("m.sent_at", "ASC")
+                ->get_all();
     }
 
     public function mark_messages_as_seen($chat_id, $user_id)

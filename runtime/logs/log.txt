@@ -3254,3 +3254,1480 @@ Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\chat.php
 Line Number: 49
 ------------------------------------------------------------------
 
+Date: 07/12/2024 20:45:04
+Exception Class: PDOException
+Error Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.firsname' in 'field list'<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT m.id AS message_id, m.chat_id, m.sent_at, m.seen, u.firsname AS sender_firstname, u.lastname AS sender_lastname, u.profile_photo AS sender_profile_photo FROM messages as m JOIN users as u ON m.sender_id = u.id WHERE m.chat_id = ? ORDER BY m.sent_at DESC</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:45:26
+Exception Class: 2
+Error Message: Undefined array key "sender_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\chat.php
+Line Number: 78
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:46:01
+Exception Class: 2
+Error Message: Undefined array key "sender_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\chat.php
+Line Number: 78
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:46:33
+Exception Class: 2
+Error Message: Undefined array key "m.sender_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\chat.php
+Line Number: 78
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:55:55
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:55:56
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:56:00
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:56:07
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:56:09
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:56:12
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:56:16
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:56:17
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:56:24
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:56:29
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:56:34
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:56:37
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:56:39
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:56:44
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:56:54
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:56:56
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:56:58
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:00
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:02
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:04
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:06
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:08
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:10
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:12
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:14
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:16
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:18
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:20
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:22
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:24
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:26
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:28
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:30
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:32
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:34
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:36
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:38
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:40
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:43
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:45
+Exception Class: RuntimeException
+Error Message: Method Chat_controller::send_message is inaccessible or nonexistent.
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Router.php
+Line Number: 220
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:45
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:47
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:49
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:49
+Exception Class: RuntimeException
+Error Message: Method Chat_controller::send_message is inaccessible or nonexistent.
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Router.php
+Line Number: 220
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:51
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:51
+Exception Class: RuntimeException
+Error Message: Method Chat_controller::send_message is inaccessible or nonexistent.
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Router.php
+Line Number: 220
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:53
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:55
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:57
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:57:59
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:01
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:03
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:05
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:07
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:09
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:11
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:13
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:15
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:17
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:19
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:21
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:23
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:25
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:27
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:29
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:31
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:33
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:35
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:37
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:39
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:41
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:43
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:45
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:47
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:49
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:51
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:53
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:55
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:57
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:58:59
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:01
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:03
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:05
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:07
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:09
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:11
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:13
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:15
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:17
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:19
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:21
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:23
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:25
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:27
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:29
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:31
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 20:59:33
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:10
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:12
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:14
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:16
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:16
+Exception Class: RuntimeException
+Error Message: Method Chat_controller::send_message is inaccessible or nonexistent.
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Router.php
+Line Number: 220
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:20
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:21
+Exception Class: RuntimeException
+Error Message: Method Chat_controller::send_message is inaccessible or nonexistent.
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Router.php
+Line Number: 220
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:22
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:22
+Exception Class: RuntimeException
+Error Message: Method Chat_controller::send_message is inaccessible or nonexistent.
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Router.php
+Line Number: 220
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:22
+Exception Class: RuntimeException
+Error Message: Method Chat_controller::send_message is inaccessible or nonexistent.
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Router.php
+Line Number: 220
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:24
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:26
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:28
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:30
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:32
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:34
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:36
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:38
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:40
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:42
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:44
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:46
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:48
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:50
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:52
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:54
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:56
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:00:58
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:01:00
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:01:02
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:01:04
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:01:06
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:01:08
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:01:10
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:01:12
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:01:14
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:01:16
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:01:18
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:01:20
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:01:22
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:01:32
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:03
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:04
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:06
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:06
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:08
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:10
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:12
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:14
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:16
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:18
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:20
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:22
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:24
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:26
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:28
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:30
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:32
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:34
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:36
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:38
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:40
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:42
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:44
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:46
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:48
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:50
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:52
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:54
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:56
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:02:58
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:03:00
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:03:02
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:03:04
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:03:06
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:03:08
+Exception Class: PDOException
+Error Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect INTEGER value: 'get-messages'
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:42:08
+Exception Class: Exception
+Error Message: Property entry does not exist
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:45:42
+Exception Class: Exception
+Error Message: Property entry does not exist
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:50:29
+Exception Class: Exception
+Error Message: Property entry does not exist
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:50:43
+Exception Class: Exception
+Error Message: Property entry does not exist
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:50:52
+Exception Class: Exception
+Error Message: Property entry does not exist
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:51:13
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:53:36
+Exception Class: Exception
+Error Message: Property entry does not exist
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 07/12/2024 21:56:46
+Exception Class: Exception
+Error Message: Property entry does not exist
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Invoker.php
+Line Number: 70
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:15:35
+Exception Class: 2
+Error Message: Undefined array key "is_liked"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\homepage.php
+Line Number: 142
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:18:21
+Exception Class: 2
+Error Message: Undefined array key "is_liked"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\homepage.php
+Line Number: 142
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:18:31
+Exception Class: 2
+Error Message: Undefined array key "is_liked"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\homepage.php
+Line Number: 142
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:18:32
+Exception Class: 2
+Error Message: Undefined array key "is_liked"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\homepage.php
+Line Number: 142
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:18:32
+Exception Class: 2
+Error Message: Undefined array key "is_liked"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\homepage.php
+Line Number: 142
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:18:32
+Exception Class: 2
+Error Message: Undefined array key "is_liked"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\homepage.php
+Line Number: 142
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:18:33
+Exception Class: 2
+Error Message: Undefined array key "is_liked"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\homepage.php
+Line Number: 142
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:21:14
+Exception Class: 2
+Error Message: Undefined array key "is_liked"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\homepage.php
+Line Number: 142
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:21:34
+Exception Class: 2
+Error Message: Undefined array key "is_liked"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\homepage.php
+Line Number: 142
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:22:55
+Exception Class: 2
+Error Message: Undefined array key "is_liked"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\homepage.php
+Line Number: 142
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:26:18
+Exception Class: 2
+Error Message: Undefined array key "entry_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 21
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:26:46
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\homepage.php
+Line Number: 45
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:26:49
+Exception Class: 2
+Error Message: Undefined variable $tags
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\homepage.php
+Line Number: 45
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:30:02
+Exception Class: Exception
+Error Message: Property user_id does not exist
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Controller.php
+Line Number: 84
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:32:47
+Exception Class: Exception
+Error Message: Property user_id does not exist
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Controller.php
+Line Number: 84
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:35:01
+Exception Class: Error
+Error Message: Call to undefined function json_response()
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 106
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:36:36
+Exception Class: Error
+Error Message: Call to undefined method Entry_model::remove_like()
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 81
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:37:07
+Exception Class: Error
+Error Message: Call to undefined method Entry_model::remove_like()
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 81
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:37:27
+Exception Class: Error
+Error Message: Call to undefined function json_response()
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 106
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:37:42
+Exception Class: Error
+Error Message: Call to undefined method Entry_model::remove_like()
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 81
+------------------------------------------------------------------
+
+Date: 07/12/2024 22:39:04
+Exception Class: Error
+Error Message: Call to undefined method Entry_model::remove_like()
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 81
+------------------------------------------------------------------
+
+Date: 07/12/2024 23:15:18
+Exception Class: ParseError
+Error Message: syntax error, unexpected token "=>", expecting ")"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 82
+------------------------------------------------------------------
+
+Date: 07/12/2024 23:15:20
+Exception Class: ParseError
+Error Message: syntax error, unexpected token "=>", expecting ")"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 82
+------------------------------------------------------------------
+
+Date: 07/12/2024 23:15:21
+Exception Class: ParseError
+Error Message: syntax error, unexpected token "=>", expecting ")"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 82
+------------------------------------------------------------------
+
+Date: 07/12/2024 23:15:23
+Exception Class: ParseError
+Error Message: syntax error, unexpected token "=>", expecting ")"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 82
+------------------------------------------------------------------
+
+Date: 07/12/2024 23:22:37
+Exception Class: ArgumentCountError
+Error Message: json_encode() expects at most 3 arguments, 4 given
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\controllers\Entry_controller.php
+Line Number: 82
+------------------------------------------------------------------
+
