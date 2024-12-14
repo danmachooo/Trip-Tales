@@ -4731,3 +4731,493 @@ Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\controllers\Entry_con
 Line Number: 82
 ------------------------------------------------------------------
 
+Date: 11/12/2024 4:12:17
+Exception Class: PDOException
+Error Message: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 220
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:13:29
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:25:41
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:25:43
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:25:45
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:25:47
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:33:39
+Exception Class: 2
+Error Message: Undefined variable $requests
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\friend_requests.php
+Line Number: 14
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:33:56
+Exception Class: 2
+Error Message: Undefined array key "firstname"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\friend_requests.php
+Line Number: 23
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:36:33
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.use' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.user_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:38:40
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sen' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:38:41
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sen' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:38:42
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sen' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:38:42
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sen' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:38:42
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sen' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:38:42
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sen' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:39:06
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id=fr.sende' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id=fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:39:07
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id=fr.sende' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id=fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:39:07
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id=fr.sende' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id=fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:39:38
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, f.status AS status FROM friend_requests f JOIN users as u ON u.id=f.sender_i' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, f.sent_at AS sent at, f.status AS status FROM friend_requests f JOIN users as u ON u.id=f.sender_id WHERE f.sender_id = ? OR f.receiver_id = ? OR f.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:40:06
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at FROM friend_requests f JOIN users as u ON u.id=f.sender_id WHERE f.sender_id ' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, f.sent_at AS sent at FROM friend_requests f JOIN users as u ON u.id=f.sender_id WHERE f.sender_id = ? OR f.receiver_id = ? OR f.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:40:07
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at FROM friend_requests f JOIN users as u ON u.id=f.sender_id WHERE f.sender_id ' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, f.sent_at AS sent at FROM friend_requests f JOIN users as u ON u.id=f.sender_id WHERE f.sender_id = ? OR f.receiver_id = ? OR f.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:40:07
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at FROM friend_requests f JOIN users as u ON u.id=f.sender_id WHERE f.sender_id ' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, f.sent_at AS sent at FROM friend_requests f JOIN users as u ON u.id=f.sender_id WHERE f.sender_id = ? OR f.receiver_id = ? OR f.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:40:07
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at FROM friend_requests f JOIN users as u ON u.id=f.sender_id WHERE f.sender_id ' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, f.sent_at AS sent at FROM friend_requests f JOIN users as u ON u.id=f.sender_id WHERE f.sender_id = ? OR f.receiver_id = ? OR f.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:40:07
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at FROM friend_requests f JOIN users as u ON u.id=f.sender_id WHERE f.sender_id ' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, f.sent_at AS sent at FROM friend_requests f JOIN users as u ON u.id=f.sender_id WHERE f.sender_id = ? OR f.receiver_id = ? OR f.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:40:46
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sen' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:40:46
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sen' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:40:46
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sen' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:40:46
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sen' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:40:58
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests AS fr JOIN users as u ON u.id = fr.' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests AS fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:40:58
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests AS fr JOIN users as u ON u.id = fr.' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests AS fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:40:59
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests AS fr JOIN users as u ON u.id = fr.' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests AS fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:40:59
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests AS fr JOIN users as u ON u.id = fr.' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests AS fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:41:08
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sen' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:41:08
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sen' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:41:09
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sen' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent at, fr.status AS status FROM friend_requests fr JOIN users as u ON u.id = fr.sender_id WHERE fr.sender_id = ? OR fr.receiver_id = ? OR fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 4:48:44
+Exception Class: PDOException
+Error Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'u.profile_photo AS profile_photo FROM friend_requests fr JOIN users as u ON u.id' at line 1<div style="background-color:#000;color:#fff;padding:15px">Query: SELECT u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent_at, fr.status AS status u.profile_photo AS profile_photo FROM friend_requests fr JOIN users as u ON u.id = fr.sender_id WHERE fr.receiver_id = ? AND fr.status = ?</div>
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 1141
+------------------------------------------------------------------
+
+Date: 11/12/2024 5:14:51
+Exception Class: 2
+Error Message: Undefined array key "id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\friend_requests.php
+Line Number: 15
+------------------------------------------------------------------
+
+Date: 11/12/2024 5:15:07
+Exception Class: 2
+Error Message: Undefined array key "id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\friend_requests.php
+Line Number: 29
+------------------------------------------------------------------
+
+Date: 11/12/2024 5:18:21
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 5:54:54
+Exception Class: 2
+Error Message: Undefined variable $users
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\friend_requests.php
+Line Number: 59
+------------------------------------------------------------------
+
+Date: 11/12/2024 6:07:53
+Exception Class: 2
+Error Message: Undefined variable $users
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\friend_requests.php
+Line Number: 59
+------------------------------------------------------------------
+
+Date: 11/12/2024 6:08:57
+Exception Class: PDOException
+Error Message: SQLSTATE[HY093]: Invalid parameter number
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 11/12/2024 6:16:05
+Exception Class: 8192
+Error Message: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\friend_requests.php
+Line Number: 63
+------------------------------------------------------------------
+
+Date: 11/12/2024 6:16:40
+Exception Class: 8192
+Error Message: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\friend_requests.php
+Line Number: 63
+------------------------------------------------------------------
+
+Date: 11/12/2024 6:25:35
+Exception Class: 8192
+Error Message: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\friend_requests.php
+Line Number: 67
+------------------------------------------------------------------
+
+Date: 11/12/2024 6:41:16
+Exception Class: PDOException
+Error Message: SQLSTATE[HY093]: Invalid parameter number
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\database\Database.php
+Line Number: 250
+------------------------------------------------------------------
+
+Date: 11/12/2024 6:42:09
+Exception Class: 8192
+Error Message: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\app\views\friend_requests.php
+Line Number: 68
+------------------------------------------------------------------
+
+Date: 11/12/2024 8:54:59
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:09
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:11
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:13
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:15
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:17
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:19
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:21
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:23
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:25
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:27
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:29
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:31
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:33
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:35
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:37
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:39
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:41
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:43
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:13:45
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:14:03
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:14:05
+Exception Class: 2
+Error Message: Undefined array key "chat_id"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 143
+------------------------------------------------------------------
+
+Date: 11/12/2024 9:15:16
+Exception Class: 2
+Error Message: Undefined array key "latitude"
+Filename: C:\Users\LENOVO_\OneDrive\Desktop\Trip-Tales\scheme\kernel\Io.php
+Line Number: 125
+------------------------------------------------------------------
+

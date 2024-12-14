@@ -20,29 +20,16 @@ class Friend_model extends Model {
     //     return $this->db->raw($query, array($sender_id, $receiver_id), PDO::FETCH_ASSOC);
     // }
 
-    public function get_friend_requests($sender_id, $receiver_id) {
-        return $this->db->table('friend_requests')
-            ->where('sender_id', $sender_id)
-            ->or_where('receiver_id', $receiver_id)
-            ->or_where('status', 'pending')
+    public function get_friend_requests($receiver_id) {
+        return $this->db->table('friend_requests fr')
+            ->select('u.id, u.firstname AS firstname, u.lastname AS lastname, fr.sent_at AS sent_at, fr.status AS status, u.profile_photo AS profile_photo')
+            ->join('users AS u', 'u.id = fr.sender_id')
+            ->where('fr.receiver_id', $receiver_id)
+            ->where('fr.status', 'pending')
             ->get_all();
     }
 
     public function get_all_friends($sender_id){
-
-        // $where1 = [
-        //     'sender_id'=> $sender_id,
-        //     'status'=> 'accepted'
-        // ];
-        // $where2 = [
-        //     'receiver_id'=> $receiver_id,
-        //     'status'=> 'accepted'
-        // ];
-
-        // $this->db->table('friend_requests')->where($where1)->or_where($where2)->get_all();
-
-        // return $this->db->table('friend_requests as fr')->join('users as u', 'fr.sender_id = u.id')->where($where1)->or_where($where2)->get_all();
-
         $query = "
             SELECT DISTINCT u.id, u.firstname, u.lastname, u.email
             FROM users u
@@ -56,35 +43,10 @@ class Friend_model extends Model {
 
         return $this->db->raw($query, array($sender_id, $sender_id), PDO::FETCH_ASSOC); 
         
-        
-        // $query = '
-        //     SELECT *
-        //     FROM friend_requests
-        //     WHERE (sender_id = ? AND status = "accepted")
-        //     OR (receiver_id = ? AND status = "accepted");
-        // ';
-
-        // return $this->db->raw($query, array($sender_id, $sender_id), PDO::FETCH_ASSOC); 
     }
 
     public function get_friend($user1_id, $user2_id) {
 
-        // $where1 = [
-        //     'sender_id' => $user1_id,
-        //     'receiver_id' => $user2_id,
-        // ];
-        
-        // $where2 = [
-        //     'sender_id' => $user2_id,
-        //     'receiver_id' => $user1_id,
-        // ];
-
-        // return $this->db->table('users as u')->join('friend_requests as fr', 'u.id =fr.sender_id OR u.id = fr.receiver_id')
-        //                 ->where($where1)
-        //                 ->or_where($where2)
-        //                 ->where('fr.status', 'accepted')
-        //                 ->where('u.id', '!=' , $user1_id)
-        //                 ->get();
         $query = "
                 SELECT 
                     u.id,
@@ -117,7 +79,7 @@ class Friend_model extends Model {
         return $this->db->table('friend_requests')->insert($bind);
     }
 
-    public function update_friend_request($sender_id, $receiver_id, $status){
+    public function accept_friend($sender_id, $receiver_id) {
         $now = new DateTime();
 
         $where = [
@@ -127,13 +89,63 @@ class Friend_model extends Model {
         ];
 
         $data = [
-            'status' => $status,
+            'status' => 'accepted',
             'responded_at' => $now->format('Y-m-d H:i:s')
         ];
-        
+
         $this->db->table('friend_requests')->where($where)->update($data);
     }
 
+    
+    public function decline_friend($sender_id, $receiver_id) {
+        $now = new DateTime();
+
+        $where = [
+            'sender_id' => $sender_id,
+            'receiver_id' => $receiver_id,
+            'status' => 'pending',
+        ];
+
+        $data = [
+            'status' => 'declined',
+            'responded_at' => $now->format('Y-m-d H:i:s')
+        ];
+
+        $this->db->table('friend_requests')->where($where)->update($data);
+    }
+
+    public function get_all_users_with_relationship_status($current_user_id){
+        $query = "
+                SELECT 
+                        u.id, 
+                        u.firstname, 
+                        u.lastname, 
+                        u.profile_photo,
+                        CASE 
+                            WHEN fr.status = 'pending' AND fr.sender_id = ? THEN 'Pending Request'
+                            WHEN fr.status = 'accepted' THEN 'Friend'
+                            WHEN fr.status = 'pending' THEN 'Pending Approval'
+                            WHEN fr.status = 'decined' THEN 'Declined'
+                            ELSE 'Not Friend'
+                        END AS relationship_status
+                    FROM 
+                        users u
+                    LEFT JOIN 
+                        friend_requests fr 
+                    ON 
+                        (fr.sender_id = ? AND fr.receiver_id = u.id) 
+                        OR (fr.sender_id = u.id AND fr.receiver_id = ?)
+                    WHERE 
+                        u.id != ?;
+
+            ";
+
+        return $this->db->raw($query, array($current_user_id, $current_user_id, $current_user_id, $current_user_id), PDO::FETCH_ASSOC);
+    }
+
+
+
+    
 
 }
 ?>

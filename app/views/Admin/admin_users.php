@@ -72,10 +72,10 @@
                                 <td>
                                     <div style="display: flex; align-items: center;">
                                         <div class="user-avatar-small"></div>
-                                        John Doe
+                                        Thiena Damasco
                                     </div>
                                 </td>
-                                <td>john.doe@example.com</td>
+                                <td>thiena8@gmail.com</td>
                                 <td>User</td>
                                 <td><span class="user-status user-status-active">Active</span></td>
                                 <td>

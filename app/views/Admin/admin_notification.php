@@ -57,7 +57,7 @@
                             </div>
                             <div class="notification-content">
                                 <div class="notification-title">New User Registration</div>
-                                <div class="notification-message">John Doe has created a new account</div>
+                                <div class="notification-message">Thiena Damasco</div>
                                 <div class="notification-time">2 minutes ago</div>
                                 <div class="notification-actions">
                                     <button class="notification-action">View Profile</button>
