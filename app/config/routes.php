@@ -69,6 +69,15 @@ $router->get('/chat/{receiver_id}', 'Chat_controller::get_recepient');
 $router->post('/chat/{receiver_id}', 'Chat_controller::get_recepient');
 
 
+$router->get('/friend-requests', 'Friend_controller::get_friend_requests');
+$router->post('/friend-requests/accept', 'Friend_controller::accept_friend');
+$router->post('/friend-requests/decline', 'Friend_controller::decline_friend');
+// $router->post('/chat/send-message', 'Chat_controller::send_message');
+// $router->get('/chat/get-messages', 'Chat_controller::get_messages');
+// $router->get('/chat/{receiver_id}', 'Chat_controller::get_recepient');
+// $router->post('/chat/{receiver_id}', 'Chat_controller::get_recepient');
+
+
 $router->get('/Admin/admin_dashboard', 'Admin::admin_dashboard');
 $router->get('/Admin/admin_activity', 'Admin::admin_activity');      
 $router->get('/Admin/admin_users', 'Admin::admin_users');   

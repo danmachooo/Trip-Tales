@@ -18,6 +18,27 @@ if ( ! function_exists('set_flash_alert'))
 	}
 }
 
+if ( ! function_exists('json_response'))
+{
+	function json_response($success, $message, $data = [], $status_code = 200) {
+		// Set the HTTP response code
+		http_response_code($status_code);	
+	
+		// Build the response array
+		$response = [
+			'success' => $success,
+			'message' => $message,
+			'data' => $data
+		];
+	
+		header('Content-Type: application/json');
+	
+		echo json_encode($response);
+		exit; // Terminate script to avoid additional output
+	}
+	
+}
+
 if ( ! function_exists('flash_alert'))
 {
 	function flash_alert()

@@ -16,39 +16,34 @@ class Friend_controller extends Controller {
     }
 
 
-    public function send_friend_request() {
-        $sender_id = $this->io->post('sender_id');
-        $receiver_id = $this->io->post('receiver_id');
+    public function accept_friend() {
+        $friend_id = $this->io->post('id');
 
-        if($this->friend->send_friend_request($sender_id, $receiver_id)) {
-            echo 'Friend Request has been sent!';
+        if($this->friend->accept_friend($friend_id, $this->user_id)) {
+            json_response(true, 'Friend request accepted', [], 201);
         } else {
-            echo 'Failed to send friend request.';
+            json_response(false, 'Something went wrong...', [], 400);
         }
     }
 
-    // public function get_friend_request_status(){
-    //     $data = $this->$friend->get_friend_request_status();
-    //     $this->call->view('/friends', $data);
-    // }
+    public function decline_friend() {
+        $friend_id = $this->io->post('id');
 
+        if($this->friend->accept_friend($friend_id, $this->user_id)) {
+            json_response(true, 'Friend request declined', [], 201);
+        } else {
+            json_response(false, 'Something went wrong...', [], 400);
+        }
+    }
+    
     public function get_friend_requests(){
-        $receiver_id = $this->io->post('receiver_id');
-
-        $data = $this->friend->get_friend_requests($this->user_id, $receiver_id);
-        $this->call->view('friends', $data);
+        $data['requests'] = $this->friend->get_friend_requests($this->user_id);
+        $data['users'] = $this->friend->get_all_users_with_relationship_status($this->user_id);
+        $this->call->view('friend_requests', $data);
     }
-
-    public function update_friend_request() {
-        $sender_id = $this->session->userdata('user_id');
-        $receiver_id = $this->io->post('receiver_id');
-        $status = $this->io->post('status');
-
-        if($this->friend->update_friend_request($sender_id, $receiver_id, $status)) {
-            echo 'Friend Request has been updated!';
-        } else {
-            echo 'Failed to update friend request.';
-        }
+    
+    
+    public function get_all_users_with_relationship_status(){
 
     }
 }
